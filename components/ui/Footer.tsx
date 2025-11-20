@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border">
-                    <p className="text-xs text-muted-foreground">© 2024 PraxisFlow Inc. All rights reserved.</p>
+                    <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} PraxisFlow Inc. All rights reserved.</p>
                     <div className="flex items-center gap-2 mt-4 md:mt-0">
                         <div className="w-2 h-2 rounded-full bg-accent"></div>
                         <span className="text-xs text-muted-foreground font-medium">All systems operational</span>
