@@ -19,7 +19,7 @@ export default function Navbar() {
                 <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-muted-foreground">
                     <Link href="/#integrations" className="hover:text-foreground transition-colors">Integrations</Link>
                     <Link href="/#services" className="hover:text-foreground transition-colors">Services</Link>
-                    <Link href="/#workflow" className="hover:text-foreground transition-colors">Workflow</Link>
+                    <Link href="/#process" className="hover:text-foreground transition-colors">Process</Link>
                     <Link href="/#pricing" className="hover:text-foreground transition-colors">Pricing</Link>
                     <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
                     <Link href="/case-studies" className="hover:text-foreground transition-colors">Case Studies</Link>
@@ -61,11 +61,11 @@ export default function Navbar() {
                             Services
                         </Link>
                         <Link
-                            href="/#workflow"
+                            href="/#process"
                             className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Workflow
+                            Process
                         </Link>
                         <Link
                             href="/#pricing"

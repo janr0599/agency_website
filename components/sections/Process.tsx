@@ -1,89 +1,86 @@
-import { ArrowRight, UserPlus, Bot, FileText, CheckCircle2 } from "lucide-react";
+import { Zap, GitMerge, Sparkles, CheckCircle2 } from "lucide-react"
 
 export default function Process() {
     return (
-        <section id="workflow" className="py-24 bg-primary text-primary-foreground overflow-hidden relative">
-            {/* Background Accents */}
-            <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
-                <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent rounded-full blur-[120px]"></div>
-                <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/60 rounded-full blur-[120px]"></div>
+        <section
+            id="process"
+            className="py-32 bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white overflow-hidden relative"
+        >
+            <div className="absolute inset-0 opacity-30 pointer-events-none">
+                <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-teal-500/30 rounded-full blur-[150px]"></div>
+                <div className="absolute bottom-1/3 left-1/4 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[150px]"></div>
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div>
-                        <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-4 text-primary-foreground">The Intelligent Pipeline</h2>
-                        <p className="text-primary-foreground/60 max-w-md">From lead capture to signed retainer in minutes, not days.</p>
-                    </div>
-                    <button className="text-accent hover:text-accent/80 text-sm font-medium flex items-center gap-2">
-                        See full schematic <ArrowRight className="w-4 h-4" />
-                    </button>
+                <div className="text-center mb-20">
+                    <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 text-white">Our End-to-End Process</h2>
+                    <p className="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                        We build and maintain custom automation workflows for your firm. From discovery to deployment and ongoing
+                        support, we handle the entire infrastructure so you can focus on practicing law.
+                    </p>
                 </div>
 
-                {/* Workflow Diagram */}
                 <div className="relative">
-                    {/* Line connecting steps */}
-                    <div className="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-primary-foreground/20 -translate-y-1/2 z-0"></div>
+                    {/* Connecting line with gradient */}
+                    <div className="hidden lg:block absolute top-[72px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent"></div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Step 1 */}
-                        <div className="relative z-10 bg-primary-foreground/5 backdrop-blur border border-primary-foreground/10 p-6 rounded-xl hover:border-accent/50 transition-colors">
-                            <div className="w-10 h-10 bg-primary rounded-full border border-primary-foreground/20 flex items-center justify-center mb-4 text-accent shadow-lg shadow-accent/20">
-                                <UserPlus className="w-5 h-5" />
-                            </div>
-                            <h4 className="text-primary-foreground font-medium mb-2">New Inquiry</h4>
-                            <p className="text-xs text-primary-foreground/60">Lead fills web form. Data validated and CRM entry created automatically.</p>
-                            <div className="mt-4 flex gap-2">
-                                <div className="h-1.5 w-full bg-primary-foreground/20 rounded-full overflow-hidden">
-                                    <div className="h-full bg-accent w-full"></div>
+                        <div className="group relative">
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
+                                <div className="w-16 h-16 bg-gradient-to-br from-teal-300 to-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <Zap className="w-8 h-8 text-white" />
                                 </div>
+                                <h4 className="text-xl font-semibold mb-3 text-white">Discovery</h4>
+                                <p className="text-sm text-slate-400 leading-relaxed">
+                                    We analyze your current workflows, identify pain points, and map out opportunities for automation
+                                    tailored to your practice.
+                                </p>
                             </div>
                         </div>
 
                         {/* Step 2 */}
-                        <div className="relative z-10 bg-primary-foreground/5 backdrop-blur border border-primary-foreground/10 p-6 rounded-xl hover:border-accent/50 transition-colors">
-                            <div className="w-10 h-10 bg-primary rounded-full border border-primary-foreground/20 flex items-center justify-center mb-4 text-accent shadow-lg shadow-accent/20">
-                                <Bot className="w-5 h-5" />
-                            </div>
-                            <h4 className="text-primary-foreground font-medium mb-2">Conflict Check</h4>
-                            <p className="text-xs text-primary-foreground/60">System scans database for conflicts. Generates report for partner review.</p>
-                            <div className="mt-4 flex gap-2">
-                                <div className="h-1.5 w-full bg-primary-foreground/20 rounded-full overflow-hidden">
-                                    <div className="h-full bg-accent w-3/4"></div>
+                        <div className="group relative">
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
+                                <div className="w-16 h-16 bg-gradient-to-br from-blue-300 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <GitMerge className="w-8 h-8 text-white" />
                                 </div>
+                                <h4 className="text-xl font-semibold mb-3 text-white">Development</h4>
+                                <p className="text-sm text-slate-400 leading-relaxed">
+                                    Our team builds custom automation infrastructure that seamlessly integrates with your existing tools
+                                    and systems.
+                                </p>
                             </div>
                         </div>
 
                         {/* Step 3 */}
-                        <div className="relative z-10 bg-primary-foreground/5 backdrop-blur border border-primary-foreground/10 p-6 rounded-xl hover:border-accent/50 transition-colors">
-                            <div className="w-10 h-10 bg-primary rounded-full border border-primary-foreground/20 flex items-center justify-center mb-4 text-accent shadow-lg shadow-accent/20">
-                                <FileText className="w-5 h-5" />
-                            </div>
-                            <h4 className="text-primary-foreground font-medium mb-2">Doc Gen</h4>
-                            <p className="text-xs text-primary-foreground/60">Retainer agreement drafted with custom clauses based on case type.</p>
-                            <div className="mt-4 flex gap-2">
-                                <div className="h-1.5 w-full bg-primary-foreground/20 rounded-full overflow-hidden">
-                                    <div className="h-full bg-accent w-1/2"></div>
+                        <div className="group relative">
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
+                                <div className="w-16 h-16 bg-gradient-to-br from-violet-300 to-violet-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <Sparkles className="w-8 h-8 text-white" />
                                 </div>
+                                <h4 className="text-xl font-semibold mb-3 text-white">Delivery</h4>
+                                <p className="text-sm text-slate-400 leading-relaxed">
+                                    We deploy your custom workflows, train your team, and ensure everything runs smoothly from day one.
+                                </p>
                             </div>
                         </div>
 
                         {/* Step 4 */}
-                        <div className="relative z-10 bg-primary-foreground/5 backdrop-blur border border-primary-foreground/10 p-6 rounded-xl hover:border-accent/50 transition-colors">
-                            <div className="w-10 h-10 bg-primary rounded-full border border-primary-foreground/20 flex items-center justify-center mb-4 text-accent shadow-lg shadow-accent/20">
-                                <CheckCircle2 className="w-5 h-5" />
-                            </div>
-                            <h4 className="text-primary-foreground font-medium mb-2">Execution</h4>
-                            <p className="text-xs text-primary-foreground/60">Sent for e-signature. Countersigned. Filed in DMS. Invoice sent.</p>
-                            <div className="mt-4 flex gap-2">
-                                <div className="h-1.5 w-full bg-primary-foreground/20 rounded-full overflow-hidden">
-                                    <div className="h-full bg-accent w-1/4 animate-pulse"></div>
+                        <div className="group relative">
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
+                                <div className="w-16 h-16 bg-gradient-to-br from-emerald-300 to-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <CheckCircle2 className="w-8 h-8 text-white" />
                                 </div>
+                                <h4 className="text-xl font-semibold mb-3 text-white">Support & Scale</h4>
+                                <p className="text-sm text-slate-400 leading-relaxed">
+                                    We provide continuous monitoring, maintenance, and optimization as your firm grows and evolves.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    );
+    )
 }

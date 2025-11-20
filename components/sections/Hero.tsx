@@ -18,7 +18,7 @@ export default function Hero() {
 
                 <h1 className="text-5xl md:text-7xl font-medium text-foreground tracking-tighter mb-6 max-w-4xl mx-auto leading-[1.1]">
                     Automate the trivial.<br />
-                    <span className="text-muted-foreground">Focus on the law.</span>
+                    <span className="text-accent">Focus on the law.</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-light">

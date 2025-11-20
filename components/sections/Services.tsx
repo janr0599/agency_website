@@ -1,8 +1,8 @@
 "use client";
-import { Files, Users, Scale, Workflow } from "lucide-react";
+import Image from "next/image";
+import { Files, Users, Scale, Workflow, Shield, BarChart } from "lucide-react";
 import { BentoCard, BentoGrid } from "../ui/bento-grid";
 import { AnimatedBeam } from "../ui/animated-beam";
-import { Marquee } from "../ui/marquee";
 import { cn } from "@/lib/utils";
 import { forwardRef, useRef } from "react";
 
@@ -48,7 +48,7 @@ function AnimatedBeamDemo() {
                 </div>
                 <div className="flex flex-col justify-center">
                     <Circle ref={div6Ref} className="size-16">
-                        <Icons.openai />
+                        <Icons.n8n />
                     </Circle>
                 </div>
                 <div className="flex flex-col justify-center gap-2">
@@ -56,16 +56,16 @@ function AnimatedBeamDemo() {
                         <Icons.googleDrive />
                     </Circle>
                     <Circle ref={div2Ref}>
-                        <Icons.googleDocs />
+                        <Icons.notion />
                     </Circle>
                     <Circle ref={div3Ref}>
-                        <Icons.whatsapp />
+                        <Icons.outlook />
                     </Circle>
                     <Circle ref={div4Ref}>
-                        <Icons.messenger />
+                        <Icons.airtable />
                     </Circle>
                     <Circle ref={div5Ref}>
-                        <Icons.notion />
+                        <Icons.openai />
                     </Circle>
                 </div>
             </div>
@@ -118,43 +118,22 @@ function AnimatedBeamDemo() {
 
 const Icons = {
     googleDrive: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#0066DA" d="M85.333 0L0 149.333h42.667L128 0z" />
-            <path fill="#00AC47" d="M170.667 0H85.333L128 85.333l85.333 149.334h42.667z" />
-            <path fill="#EA4335" d="M128 85.333L42.667 234.667h170.666z" />
-        </svg>
-    ),
-    googleDocs: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#4285F4" d="M58.667 0h96L213.333 58.667V256H58.667z" />
-            <path fill="#A1C2FA" d="M154.667 0v58.667h58.666z" />
-        </svg>
+        <Image src="/google-drive.svg" alt="Google Drive" width={40} height={40} className="h-8 w-8" />
     ),
     notion: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#000" d="M0 0h256v256H0z" />
-            <path fill="#FFF" d="M64 64h128v128H64z" />
-        </svg>
+        <Image src="/notion.svg" alt="Notion" width={40} height={40} className="h-8 w-8" />
+    ),
+    n8n: () => (
+        <Image src="/n8n.svg" alt="OpenAI" width={60} height={60} className="h-12 w-12" />
+    ),
+    outlook: () => (
+        <Image src="/microsoft-outlook.svg" alt="Outlook" width={40} height={40} className="h-8 w-8" />
+    ),
+    airtable: () => (
+        <Image src="/airtable.svg" alt="Airtable" width={40} height={40} className="h-8 w-8" />
     ),
     openai: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="128" cy="128" r="96" fill="#10A37F" />
-        </svg>
-    ),
-    zapier: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="128" cy="128" r="96" fill="#FF4A00" />
-        </svg>
-    ),
-    whatsapp: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="128" cy="128" r="96" fill="#25D366" />
-        </svg>
-    ),
-    messenger: () => (
-        <svg width="100%" height="100%" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="128" cy="128" r="96" fill="#0084FF" />
-        </svg>
+        <Image src="/openai.svg" alt="OpenAI" width={40} height={40} className="h-8 w-8" />
     ),
     user: () => (
         <svg
@@ -172,74 +151,100 @@ const Icons = {
     ),
 };
 
-const documents = [
-    { name: "NDA.pdf", type: "Contract" },
-    { name: "Retainer.docx", type: "Agreement" },
-    { name: "Pleading.pdf", type: "Legal Doc" },
-    { name: "Motion.docx", type: "Filing" },
-];
+const DocumentIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-teal-100", className)}>
+        <Files className="h-6 w-6 text-teal-600" />
+    </div>
+);
+
+const CaseIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-purple-100", className)}>
+        <Scale className="h-6 w-6 text-purple-600" />
+    </div>
+);
+
+const SecurityIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-indigo-100", className)}>
+        <Shield className="h-6 w-6 text-indigo-600" />
+    </div>
+);
+
+const WorkflowIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-orange-100", className)}>
+        <Workflow className="h-6 w-6 text-orange-600" />
+    </div>
+);
+
+const OnboardingIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-blue-100", className)}>
+        <Users className="h-6 w-6 text-blue-600" />
+    </div>
+);
+
+const AnalyticsIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-amber-100", className)}>
+        <BarChart className="h-6 w-6 text-amber-600" />
+    </div>
+);
 
 const services = [
     {
         name: "Document Automation",
         description: "Generate NDAs, retainer agreements, and pleadings instantly from client intake forms.",
-        Icon: Files,
+        Icon: DocumentIcon,
         href: "/contact",
         cta: "Learn more",
-        background: (
-            <Marquee
-                pauseOnHover
-                className="absolute top-10 [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] [--duration:20s]"
-            >
-                {documents.map((doc, idx) => (
-                    <div
-                        key={idx}
-                        className={cn(
-                            "relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
-                            "border-border bg-card hover:bg-secondary",
-                            "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
-                        )}
-                    >
-                        <div className="flex flex-col">
-                            <p className="text-sm font-medium text-foreground">{doc.name}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{doc.type}</p>
-                        </div>
-                    </div>
-                ))}
-            </Marquee>
-        ),
-        className: "md:col-span-2 md:row-span-1",
-    },
-    {
-        name: "Workflow Integration",
-        description: "Connect your existing tools seamlessly. We integrate with Clio, DocuSign, Outlook, and 50+ platforms.",
-        Icon: Workflow,
-        href: "/contact",
-        cta: "Learn more",
-        background: (
-            <div className="absolute inset-0 transition-all duration-300 ease-out group-hover:scale-105 [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)]">
-                <AnimatedBeamDemo />
-            </div>
-        ),
-        className: "md:col-span-2 md:row-span-2",
+        background: <div className="absolute inset-0" />,
+        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
     },
     {
         name: "Case Management",
         description: "Sync deadlines to calendars, auto-tag emails to matter files, and receive daily digests.",
-        Icon: Scale,
+        Icon: CaseIcon,
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-2 md:row-span-1",
+        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
     },
     {
         name: "Client Onboarding",
         description: "Automated email sequences, secure portal creation, and KYC checks triggered instantly.",
-        Icon: Users,
+        Icon: OnboardingIcon,
         href: "/contact",
         cta: "Learn more",
-        background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />,
-        className: "md:col-span-4 md:row-span-1",
+        background: <div className="absolute inset-0" />,
+        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+    },
+    {
+        name: "Workflow Integration",
+        description: "Connect your existing tools seamlessly. We integrate with Clio, Airtable, Outlook, and 1000+ platforms.",
+        Icon: WorkflowIcon,
+        href: "/contact",
+        cta: "Learn more",
+        background: (
+            <div className="absolute top-10 bottom-20 left-10 right-10 transition-all duration-300 ease-out hidden md:block">
+                <AnimatedBeamDemo />
+            </div>
+        ),
+        className: "md:col-span-2 md:row-span-2 border hover:border-accent transition-all duration-300 ease-out",
+    },
+    {
+        name: "Security & Compliance",
+        description: "Bank-grade encryption, SOC 2 compliance, and role-based access controls.",
+        Icon: SecurityIcon,
+        href: "/contact",
+        cta: "Learn more",
+        background: <div className="absolute inset-0" />,
+        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+    },
+    {
+        name: "Analytics & Reporting",
+        description: "Real-time insights on case progress, team productivity, and billable hours.",
+        Icon: AnalyticsIcon,
+        href: "/contact",
+        cta: "Learn more",
+        background: <div className="absolute inset-0" />,
+        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
     },
 ];
 
@@ -255,7 +260,7 @@ export default function Services() {
                 </p>
             </div>
 
-            <BentoGrid className="grid-cols-1 md:grid-cols-4 auto-rows-[12rem]">
+            <BentoGrid className="grid-cols-1 md:grid-cols-3 auto-rows-[12rem]">
                 {services.map((service, idx) => (
                     <BentoCard key={idx} {...service} />
                 ))}

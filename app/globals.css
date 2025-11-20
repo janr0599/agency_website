@@ -27,7 +27,7 @@
 
     /* MUTED: Slate 500 (#64748b) */
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 215 18% 34%;
 
     /* BORDERS: Slate 200 (#e2e8f0) */
     --border: 214 32% 91%;
@@ -71,6 +71,10 @@
 @layer base {
   * {
     @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
