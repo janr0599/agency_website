@@ -1,35 +1,36 @@
-import { Briefcase, Mail, PenTool, Database, Slack, FileText, Calendar, Users, Cloud, Shield, Zap, Globe } from "lucide-react";
 import { Marquee } from "../ui/marquee";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const integrations = [
-    { icon: Briefcase, name: "Clio" },
-    { icon: Mail, name: "Outlook" },
-    { icon: PenTool, name: "DocuSign" },
-    { icon: Database, name: "Notion" },
-    { icon: Slack, name: "Slack" },
-    { icon: FileText, name: "Google Docs" },
-    { icon: Calendar, name: "Calendly" },
-    { icon: Users, name: "Salesforce" },
-    { icon: Cloud, name: "Dropbox" },
-    { icon: Shield, name: "LexisNexis" },
-    { icon: Zap, name: "Zapier" },
-    { icon: Globe, name: "WordPress" },
+    { icon: "/salesforce.svg", className: "h-12" },
+    { icon: "/slack.svg" },
+    { icon: "/zoho.svg" },
+    { icon: "/clio.svg" },
+    { icon: "/docusign.svg", className: "h-12" },
+    { icon: "/airtable_logo.svg" },
+    { icon: "/wordpress.svg", className: "h-12" },
 ];
 
 export default function SocialProof() {
     return (
         <section id="integrations" className="py-12 border-y border-border bg-secondary/50 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 text-center">
-                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-8">Seamlessly integrated with your stack</p>
+                <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-8">Seamlessly integrated with your stack</p>
 
                 <Marquee pauseOnHover className="[--duration:40s]">
                     {integrations.map((integration, idx) => (
                         <div
                             key={idx}
-                            className="flex items-center gap-2 font-bold text-xl text-foreground tracking-tight mx-8 opacity-60 hover:opacity-100 transition-opacity duration-300"
+                            className="group flex items-center justify-center gap-2 mx-12 opacity-60 hover:opacity-100 transition-all grayscale hover:grayscale-0 duration-300"
                         >
-                            <integration.icon className="w-5 h-5" />
-                            {integration.name}
+                            <Image
+                                src={integration.icon}
+                                alt="Integration Logo"
+                                width={120}
+                                height={50}
+                                className={cn("h-8 w-auto object-contain transition-all duration-300", integration.className)}
+                            />
                         </div>
                     ))}
                 </Marquee>
