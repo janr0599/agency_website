@@ -1,8 +1,8 @@
 import Hero from "../components/sections/Hero";
-import SocialProof from "../components/sections/SocialProof";
+import Integrations from "../components/sections/Integrations";
 import Services from "../components/sections/Services";
 import Process from "../components/sections/Process";
-import Pricing from "../components/sections/Pricing";
+import { Pricing } from "../components/sections/Pricing";
 import Testimonials from "../components/sections/Testimonials";
 import CTA from "../components/sections/CTA";
 
@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div className="flex flex-col w-full">
             <Hero />
-            <SocialProof />
+            <Integrations />
             <Services />
             <Process />
             <Pricing />

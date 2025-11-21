@@ -3,6 +3,7 @@ import { DotPattern } from "../ui/dot-pattern";
 import { ShimmerButton } from "../ui/shimmer-button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { FadeIn } from "../ui/fade-in";
 
 export default function CTA() {
     return (
@@ -26,25 +27,28 @@ export default function CTA() {
                 <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent/60 rounded-full blur-[100px] opacity-20 translate-x-1/2 translate-y-1/2"></div>
 
                 <div className="relative z-10">
-                    <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Ready to modernize your practice?</h2>
-                    <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-10">Join the forward-thinking boutique firms that are leveraging automation to scale without the burnout.</p>
-
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link href="/contact" className="w-full sm:w-auto">
-                            <ShimmerButton
-                                className="w-full px-8 py-3.5 rounded-xl font-medium"
-                                background="hsl(var(--background))"
-                                shimmerColor="#0d9488"
-                                shimmerDuration="2s"
-                                shimmerSize="0.30em"
-                            >
-                                <span className="flex items-center justify-center gap-2 text-foreground">
-                                    Book a Strategy Call
-                                </span>
-                            </ShimmerButton>
-                        </Link>
-                    </div>
-                    <p className="mt-6 text-xs text-primary-foreground/50">No commitment required. Free initial audit.</p>
+                    <FadeIn>
+                        <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Ready to modernize your practice?</h2>
+                        <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-10">Join the forward-thinking boutique firms that are leveraging automation to scale without the burnout.</p>
+                    </FadeIn>
+                    <FadeIn delay={0.2}>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <Link href="/contact" className="w-full sm:w-auto">
+                                <ShimmerButton
+                                    className="w-full px-8 py-3.5 rounded-xl font-medium"
+                                    background="hsl(var(--background))"
+                                    shimmerColor="#0d9488"
+                                    shimmerDuration="2s"
+                                    shimmerSize="0.30em"
+                                >
+                                    <span className="flex items-center justify-center gap-2 text-foreground">
+                                        Book a Strategy Call
+                                    </span>
+                                </ShimmerButton>
+                            </Link>
+                        </div>
+                        <p className="mt-6 text-xs text-primary-foreground/50">No commitment required. Free initial audit.</p>
+                    </FadeIn>
                 </div>
             </div>
         </section>

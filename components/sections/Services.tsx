@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Files, Users, Scale, Workflow, Shield, BarChart } from "lucide-react";
 import { BentoCard, BentoGrid } from "../ui/bento-grid";
 import { AnimatedBeam } from "../ui/animated-beam";
+import { FadeIn } from "../ui/fade-in";
 import { cn } from "@/lib/utils";
 import { forwardRef, useRef } from "react";
 
@@ -195,7 +196,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
     },
     {
         name: "Case Management",
@@ -204,7 +205,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
     },
     {
         name: "Client Onboarding",
@@ -213,7 +214,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
     },
     {
         name: "Workflow Integration",
@@ -226,7 +227,7 @@ const services = [
                 <AnimatedBeamDemo />
             </div>
         ),
-        className: "md:col-span-2 md:row-span-2 border hover:border-accent transition-all duration-300 ease-out",
+        className: "md:col-span-2 md:row-span-2 transition-all duration-300 ease-out",
     },
     {
         name: "Security & Compliance",
@@ -235,7 +236,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
     },
     {
         name: "Analytics & Reporting",
@@ -244,27 +245,31 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 border hover:border-accent transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
     },
 ];
 
 export default function Services() {
     return (
         <section id="services" className="py-24 max-w-7xl mx-auto px-6 bg-background">
-            <div className="mb-16 md:mb-24">
-                <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-4">
-                    Engineering efficiency for legal minds.
-                </h2>
-                <p className="text-muted-foreground max-w-xl text-lg">
-                    Stop copying and pasting data between spreadsheets and contracts. Our systems handle the busy work.
-                </p>
-            </div>
+            <FadeIn margin="-200px">
+                <div className="mb-16 md:mb-24">
+                    <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-4">
+                        Engineering efficiency for legal minds.
+                    </h2>
+                    <p className="text-muted-foreground max-w-xl text-lg">
+                        Stop copying and pasting data between spreadsheets and contracts. Our systems handle the busy work.
+                    </p>
+                </div>
 
-            <BentoGrid className="grid-cols-1 md:grid-cols-3 auto-rows-[12rem]">
-                {services.map((service, idx) => (
-                    <BentoCard key={idx} {...service} />
-                ))}
-            </BentoGrid>
+            </FadeIn>
+            <FadeIn delay={0.2} margin="-100px">
+                <BentoGrid className="grid-cols-1 md:grid-cols-3 auto-rows-[12rem]">
+                    {services.map((service, idx) => (
+                        <BentoCard key={idx} {...service} />
+                    ))}
+                </BentoGrid>
+            </FadeIn>
         </section>
     );
 }

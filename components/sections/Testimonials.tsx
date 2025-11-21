@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Marquee } from "../ui/marquee";
+import { FadeIn } from "../ui/fade-in";
 
 const testimonials = [
     {
@@ -78,27 +79,33 @@ const TestimonialCard = ({ quote, name, title, initials }: typeof testimonials[0
 export default function Testimonials() {
     return (
         <section className="py-24 bg-secondary/50 border-y border-border overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-16 text-center">
-                    Partners trust us.
-                </h2>
+            <FadeIn>
+                <div className="max-w-7xl mx-auto px-6">
+                    <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-16 text-center">
+                        Partners trust us.
+                    </h2>
 
-                <div className="space-y-8">
-                    {/* First Row - Scrolling Left to Right */}
-                    <Marquee pauseOnHover className="[--duration:50s]">
-                        {firstRow.map((testimonial, idx) => (
-                            <TestimonialCard key={idx} {...testimonial} />
-                        ))}
-                    </Marquee>
+                    <div className="space-y-8">
+                        {/* First Row - Scrolling Left to Right */}
+                        <FadeIn delay={0.2}>
+                            <Marquee pauseOnHover className="[--duration:50s]">
+                                {firstRow.map((testimonial, idx) => (
+                                    <TestimonialCard key={idx} {...testimonial} />
+                                ))}
+                            </Marquee>
+                        </FadeIn>
 
-                    {/* Second Row - Scrolling Right to Left */}
-                    <Marquee pauseOnHover reverse className="[--duration:50s]">
-                        {secondRow.map((testimonial, idx) => (
-                            <TestimonialCard key={idx} {...testimonial} />
-                        ))}
-                    </Marquee>
+                        {/* Second Row - Scrolling Right to Left */}
+                        <FadeIn delay={0.4}>
+                            <Marquee pauseOnHover reverse className="[--duration:50s]">
+                                {secondRow.map((testimonial, idx) => (
+                                    <TestimonialCard key={idx} {...testimonial} />
+                                ))}
+                            </Marquee>
+                        </FadeIn>
+                    </div>
                 </div>
-            </div>
+            </FadeIn>
         </section>
     );
 }

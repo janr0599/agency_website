@@ -1,79 +1,143 @@
-"use client";
-import { Check } from "lucide-react";
-import { useState } from "react";
+"use client"
+import { Check, Rocket, ShieldCheck, ArrowRight, ArrowRightIcon } from "lucide-react"
+import { ShimmerButton } from "../ui/shimmer-button"
+import Link from "next/link"
+import { motion } from "framer-motion"
+import { ShinyButton } from "../ui/shiny-button"
+import { AnimatedShinyText } from "../ui/animated-shiny-text"
 
-export default function Pricing() {
-    const [isYearly, setIsYearly] = useState(false);
-
+export function Pricing() {
     return (
-        <section id="pricing" className="py-24 max-w-7xl mx-auto px-6 bg-background">
-            <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-4">Transparent Retainers</h2>
-                <p className="text-muted-foreground">Choose the level of automation support your firm needs.</p>
+        <section id="pricing" className="py-24 max-w-7xl mx-auto px-6">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="text-center mb-16 max-w-3xl mx-auto"
+            >
+                <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-4">
+                    Your Investment in Intelligent Automation
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                    Every firm is unique. Our solutions are custom-tailored to your specific needs, delivering measurable ROI and
+                    ongoing support.
+                </p>
+            </motion.div>
 
-                {/* Custom Toggle */}
-                <div className="flex items-center justify-center mt-8 gap-3">
-                    <span className="text-sm font-medium text-foreground">Monthly</span>
-                    <div
-                        className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in cursor-pointer"
-                        onClick={() => setIsYearly(!isYearly)}
-                    >
-                        <div className={`absolute block w-5 h-5 rounded-full bg-background border-4 appearance-none cursor-pointer transition-all duration-300 ease-in-out ${isYearly ? 'right-0 border-accent' : 'left-0 border-border'}`}></div>
-                        <div className={`block overflow-hidden h-5 rounded-full cursor-pointer ${isYearly ? 'bg-accent' : 'bg-muted'}`}></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-16">
+                {/* Phase 1: Implementation */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="p-8 md:p-10 rounded-2xl border border-border bg-card flex flex-col h-full relative overflow-hidden group hover:border-accent/30 transition-colors"
+                >
+                    <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <Rocket className="w-24 h-24 text-accent" />
                     </div>
-                    <span className="text-sm font-medium text-muted-foreground">Yearly <span className="text-accent text-xs bg-accent/10 px-2 py-0.5 rounded ml-1">-15%</span></span>
-                </div>
+
+                    <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 text-accent">
+                        <Rocket className="w-6 h-6" />
+                    </div>
+
+                    <h3 className="font-medium text-foreground text-xl mb-2">Phase 1: Custom Implementation</h3>
+                    <p className="text-accent font-medium text-sm mb-6 uppercase tracking-wider">One-time Project Fee</p>
+
+                    <p className="text-muted-foreground leading-relaxed mb-8 flex-grow">
+                        A one-time project fee based on the complexity of your automation needs and the estimated return on
+                        investment. This includes discovery, design, development, and training.
+                    </p>
+
+                    <div className="pt-8 border-t border-border">
+                        <p className="text-sm text-muted-foreground italic">"Tailored to your firm's specific infrastructure."</p>
+                    </div>
+                </motion.div>
+
+                {/* Phase 2: Maintenance */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="p-8 md:p-10 rounded-2xl border border-border bg-secondary flex flex-col h-full relative overflow-hidden group hover:border-accent/30 transition-colors"
+                >
+                    <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <ShieldCheck className="w-24 h-24 text-accent" />
+                    </div>
+
+                    <div className="w-12 h-12 bg-card rounded-xl flex items-center justify-center mb-6 text-accent shadow-sm">
+                        <ShieldCheck className="w-6 h-6" />
+                    </div>
+
+                    <h3 className="font-medium text-foreground text-xl mb-2">Phase 2: Ongoing Partnership</h3>
+                    <p className="text-accent font-medium text-sm mb-6 uppercase tracking-wider">Predictable Monthly Fee</p>
+
+                    <p className="text-muted-foreground leading-relaxed mb-8 flex-grow">
+                        A predictable monthly fee for continuous monitoring, maintenance, updates, and dedicated support for your
+                        automated infrastructure. Ensures uninterrupted efficiency and peace of mind.
+                    </p>
+
+                    <div className="pt-8 border-t border-border">
+                        <p className="text-sm text-muted-foreground italic">"Continuous optimization and priority support."</p>
+                    </div>
+                </motion.div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                {/* Plan 1 */}
-                <div className="p-8 rounded-2xl border border-border bg-card">
-                    <h3 className="font-medium text-foreground text-lg">Solo Practitioner</h3>
-                    <div className="mt-4 mb-6">
-                        <span className="text-4xl font-medium text-foreground">$499</span><span className="text-muted-foreground text-sm">/mo</span>
-                    </div>
-                    <p className="text-xs text-muted-foreground mb-6 h-10">Perfect for individual attorneys looking to remove administrative bottlenecks.</p>
-                    <a href="#" className="block w-full py-2.5 border border-border rounded-lg text-center text-sm font-medium text-muted-foreground hover:border-foreground hover:text-foreground transition-colors">Get Started</a>
-                    <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> 1 Custom Workflow</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Basic CRM Integration</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Email Support</li>
-                    </ul>
-                </div>
+            {/* What's Included */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-primary rounded-3xl p-8 md:p-12 text-center md:text-left relative overflow-hidden"
+            >
+                {/* Decorative background elements */}
+                <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
 
-                {/* Plan 2 (Highlighted) */}
-                <div className="p-8 rounded-2xl border-2 border-accent bg-accent/5 relative shadow-xl shadow-accent/5">
-                    <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-medium px-3 py-1 rounded-bl-xl rounded-tr-lg">Most Popular</div>
-                    <h3 className="font-medium text-accent text-lg">Boutique Firm</h3>
-                    <div className="mt-4 mb-6">
-                        <span className="text-4xl font-medium text-foreground">$1,299</span><span className="text-muted-foreground text-sm">/mo</span>
+                <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+                    <div className="md:w-1/3">
+                        <h3 className="text-2xl md:text-3xl font-medium text-primary-foreground mb-4">What's Included</h3>
+                        <p className="text-primary-foreground/70 mb-8">
+                            Our comprehensive engagement model ensures you get value from day one and sustainable growth forever.
+                        </p>
+                        <Link href="/contact" className="w-full md:w-auto">
+                            <div className="group relative overflow-hidden rounded-xl bg-accent px-8 py-4 transition-all hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/20">
+                                <AnimatedShinyText className="inline-flex items-center justify-center gap-2 text-lg font-medium text-primary-foreground transition ease-out hover:text-primary-foreground/90 hover:duration-300 bg-gradient-to-r from-transparent via-white/80 via-50% to-transparent dark:via-white/80">
+                                    <span>Schedule a Free Discovery Call</span>
+                                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                                </AnimatedShinyText>
+                            </div>
+                        </Link>
+                        <p className="text-primary-foreground/60 text-sm mt-4">
+                            Let's explore your firm's unique potential for automation and discuss a tailored investment that delivers
+                            clear ROI.
+                        </p>
                     </div>
-                    <p className="text-xs text-muted-foreground mb-6 h-10">Comprehensive automation for firms with 2-10 partners.</p>
-                    <a href="#" className="block w-full py-2.5 bg-primary rounded-lg text-center text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">Get Started</a>
-                    <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> 5 Custom Workflows</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Full Tech Stack Audit</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Dedicated Account Manager</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Quarterly Optimization</li>
-                    </ul>
-                </div>
 
-                {/* Plan 3 */}
-                <div className="p-8 rounded-2xl border border-border bg-card">
-                    <h3 className="font-medium text-foreground text-lg">Enterprise</h3>
-                    <div className="mt-4 mb-6">
-                        <span className="text-4xl font-medium text-foreground">Custom</span>
+                    <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+                        {[
+                            "Comprehensive Workflow Audit",
+                            "ROI Projections & Feasibility Study",
+                            "Custom Solution Design & Development",
+                            "Hands-on Team Training",
+                            "Dedicated Account Management",
+                            "Proactive System Maintenance",
+                            "Priority Support Channels",
+                            "Quarterly Optimization Reviews",
+                        ].map((benefit, index) => (
+                            <div key={index} className="flex items-start gap-3">
+                                <div className="mt-1 w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                                    <Check className="w-3 h-3 text-accent" />
+                                </div>
+                                <span className="text-primary-foreground/80">{benefit}</span>
+                            </div>
+                        ))}
                     </div>
-                    <p className="text-xs text-muted-foreground mb-6 h-10">For larger firms requiring complex, multi-departmental automation.</p>
-                    <a href="#" className="block w-full py-2.5 border border-border rounded-lg text-center text-sm font-medium text-muted-foreground hover:border-foreground hover:text-foreground transition-colors">Contact Sales</a>
-                    <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Unlimited Workflows</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> Custom API Development</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> 24/7 Priority Support</li>
-                        <li className="flex items-center gap-2"><Check className="w-4 h-4 text-accent" /> On-premise Deployment</li>
-                    </ul>
                 </div>
-            </div>
+            </motion.div>
         </section>
-    );
+    )
 }

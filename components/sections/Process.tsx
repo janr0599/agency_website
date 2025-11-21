@@ -1,4 +1,7 @@
+"use client"
+
 import { Zap, GitMerge, Sparkles, CheckCircle2 } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Process() {
     return (
@@ -12,72 +15,124 @@ export default function Process() {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="text-center mb-20">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-20"
+                >
                     <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 text-white">Our End-to-End Process</h2>
                     <p className="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
                         We build and maintain custom automation workflows for your firm. From discovery to deployment and ongoing
                         support, we handle the entire infrastructure so you can focus on practicing law.
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="relative">
                     {/* Connecting line with gradient */}
-                    <div className="hidden lg:block absolute top-[72px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent"></div>
+                    <motion.div
+                        initial={{ opacity: 0, scaleX: 0 }}
+                        whileInView={{ opacity: 1, scaleX: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="hidden lg:block absolute top-[72px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent origin-left"
+                    ></motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {/* Step 1 */}
-                        <div className="group relative">
-                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
-                                <div className="w-16 h-16 bg-gradient-to-br from-teal-300 to-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <Zap className="w-8 h-8 text-white" />
+                        {/* Step 1 - Discovery (Teal) */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
+                            viewport={{ once: true }}
+                            className="group relative"
+                        >
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full overflow-hidden">
+                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                                    <Zap className="w-24 h-24 text-teal-500" />
+                                </div>
+
+                                <div className="w-12 h-12 bg-teal-500/10 rounded-xl flex items-center justify-center mb-6 text-teal-400">
+                                    <Zap className="w-6 h-6" />
                                 </div>
                                 <h4 className="text-xl font-semibold mb-3 text-white">Discovery</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed">
+                                <p className="text-sm text-slate-400 leading-relaxed relative z-10">
                                     We analyze your current workflows, identify pain points, and map out opportunities for automation
                                     tailored to your practice.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Step 2 */}
-                        <div className="group relative">
-                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
-                                <div className="w-16 h-16 bg-gradient-to-br from-blue-300 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <GitMerge className="w-8 h-8 text-white" />
+                        {/* Step 2 - Development (Blue) */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            viewport={{ once: true }}
+                            className="group relative"
+                        >
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 h-full overflow-hidden">
+                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                                    <GitMerge className="w-24 h-24 text-blue-500" />
+                                </div>
+
+                                <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 text-blue-400">
+                                    <GitMerge className="w-6 h-6" />
                                 </div>
                                 <h4 className="text-xl font-semibold mb-3 text-white">Development</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed">
+                                <p className="text-sm text-slate-400 leading-relaxed relative z-10">
                                     Our team builds custom automation infrastructure that seamlessly integrates with your existing tools
                                     and systems.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Step 3 */}
-                        <div className="group relative">
-                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
-                                <div className="w-16 h-16 bg-gradient-to-br from-violet-300 to-violet-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <Sparkles className="w-8 h-8 text-white" />
+                        {/* Step 3 - Delivery (Violet) */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                            viewport={{ once: true }}
+                            className="group relative"
+                        >
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-violet-500/50 hover:shadow-2xl hover:shadow-violet-500/10 transition-all duration-300 h-full overflow-hidden">
+                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                                    <Sparkles className="w-24 h-24 text-violet-500" />
+                                </div>
+
+                                <div className="w-12 h-12 bg-violet-500/10 rounded-xl flex items-center justify-center mb-6 text-violet-400">
+                                    <Sparkles className="w-6 h-6" />
                                 </div>
                                 <h4 className="text-xl font-semibold mb-3 text-white">Delivery</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed">
+                                <p className="text-sm text-slate-400 leading-relaxed relative z-10">
                                     We deploy your custom workflows, train your team, and ensure everything runs smoothly from day one.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Step 4 */}
-                        <div className="group relative">
-                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-teal-500/50 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 h-full">
-                                <div className="w-16 h-16 bg-gradient-to-br from-emerald-300 to-emerald-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    <CheckCircle2 className="w-8 h-8 text-white" />
+                        {/* Step 4 - Support & Scale (Emerald) */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                            viewport={{ once: true }}
+                            className="group relative"
+                        >
+                            <div className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 p-8 rounded-2xl hover:border-emerald-500/50 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 h-full overflow-hidden">
+                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                                    <CheckCircle2 className="w-24 h-24 text-emerald-500" />
+                                </div>
+
+                                <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 text-emerald-400">
+                                    <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <h4 className="text-xl font-semibold mb-3 text-white">Support & Scale</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed">
+                                <p className="text-sm text-slate-400 leading-relaxed relative z-10">
                                     We provide continuous monitoring, maintenance, and optimization as your firm grows and evolves.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
