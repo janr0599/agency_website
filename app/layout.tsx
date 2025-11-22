@@ -9,6 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "PraxisFlow Automations | Legal Automation Agency",
     description: "We simplify complex legal operations through intelligent, custom automation — freeing attorneys to focus on billable work.",
+    icons: {
+        icon: "/logo.svg",
+        shortcut: "/logo.svg",
+        apple: "/logo.svg",
+    },
 };
 
 export default function RootLayout({
