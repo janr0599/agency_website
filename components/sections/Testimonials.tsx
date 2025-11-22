@@ -78,11 +78,11 @@ const TestimonialCard = ({ quote, name, title, initials }: typeof testimonials[0
 
 export default function Testimonials() {
     return (
-        <section className="py-24 bg-secondary/50 border-y border-border overflow-hidden">
+        <section className="py-24 bg-secondary/50 border-y border-border overflow-hidden" id="testimonials">
             <FadeIn>
                 <div className="max-w-7xl mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-16 text-center">
-                        Partners trust us.
+                        Trusted by Leading Firms.
                     </h2>
 
                     <div className="space-y-8">

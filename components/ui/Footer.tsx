@@ -23,29 +23,26 @@ export default function Footer() {
                         <div>
                             <h4 className="font-medium text-foreground mb-4 text-sm">Product</h4>
                             <ul className="space-y-3 text-sm text-muted-foreground">
-                                <li><a href="#" className="hover:text-accent transition-colors">Features</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Integrations</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Pricing</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Changelog</a></li>
+                                <li><a href="/#services" className="hover:text-accent transition-colors">Services</a></li>
+                                <li><a href="/#pricing" className="hover:text-accent transition-colors">Pricing</a></li>
+                                <li><a href="/case-studies" className="hover:text-accent transition-colors">Case Studies</a></li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 className="font-medium text-foreground mb-4 text-sm">Company</h4>
                             <ul className="space-y-3 text-sm text-muted-foreground">
-                                <li><a href="#" className="hover:text-accent transition-colors">About</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Customers</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Contact</a></li>
+                                <li><a href="/about" className="hover:text-accent transition-colors">About</a></li>
+                                <li><a href="/#testimonials" className="hover:text-accent transition-colors">Customers</a></li>
+                                <li><a href="/contact" className="hover:text-accent transition-colors">Contact</a></li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 className="font-medium text-foreground mb-4 text-sm">Legal</h4>
                             <ul className="space-y-3 text-sm text-muted-foreground">
-                                <li><a href="#" className="hover:text-accent transition-colors">Privacy</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Terms</a></li>
-                                <li><a href="#" className="hover:text-accent transition-colors">Security</a></li>
+                                <li><a href="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
+                                <li><a href="/terms-of-use" className="hover:text-accent transition-colors">Terms of Use</a></li>
                             </ul>
                         </div>
                     </div>

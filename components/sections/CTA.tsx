@@ -28,7 +28,7 @@ export default function CTA() {
 
                 <div className="relative z-10">
                     <FadeIn>
-                        <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Ready to modernize your practice?</h2>
+                        <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Ready to Modernize Your Practice?</h2>
                         <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-10">Join the forward-thinking boutique firms that are leveraging automation to scale without the burnout.</p>
                     </FadeIn>
                     <FadeIn delay={0.2}>
@@ -47,7 +47,7 @@ export default function CTA() {
                                 </ShimmerButton>
                             </Link>
                         </div>
-                        <p className="mt-6 text-xs text-primary-foreground/50">No commitment required. Free initial audit.</p>
+                        <p className="mt-6 text-xs text-primary-foreground/50">Free consultation. No commitment required</p>
                     </FadeIn>
                 </div>
             </div>

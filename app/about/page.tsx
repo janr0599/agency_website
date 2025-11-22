@@ -217,7 +217,7 @@ export default function AboutPage() {
 
                     <div className="relative z-10">
                         <FadeIn>
-                            <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Ready to Transform Your Practice?</h2>
+                            <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Ready to Modernize Your Practice?</h2>
                             <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-10">
                                 Let's discuss how we can build a custom automation infrastructure tailored to your firm's unique needs.
                             </p>

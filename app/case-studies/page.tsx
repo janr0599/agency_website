@@ -8,18 +8,21 @@ import { cn } from "@/lib/utils";
 
 const caseStudies = [
     {
+        id: "summit-legal-group",
         client: "Summit Legal Group",
         title: "Reducing Client Onboarding Time by 75%",
         summary: "How we implemented a fully automated intake system that syncs directly with Clio, saving 15 hours per week.",
         tags: ["Intake Automation", "Clio Integration", "Family Law"],
     },
     {
+        id: "lex-partners-llp",
         client: "Lex Partners LLP",
         title: "Automating Complex Estate Planning Documents",
         summary: "A custom document generation engine that creates 50+ page estate plans in under 3 minutes based on client questionnaire data.",
         tags: ["Document Gen", "Estate Planning", "Zero-Error"],
     },
     {
+        id: "vanguard-litigation",
         client: "Vanguard Litigation",
         title: "Seamless Discovery Management",
         summary: "Building a custom portal for client evidence upload and automatic categorization, streamlining the discovery phase.",
@@ -70,7 +73,7 @@ export default function CaseStudiesPage() {
                 <div className="max-w-5xl mx-auto space-y-8">
                     {caseStudies.map((study, idx) => (
                         <FadeIn key={idx} delay={idx * 0.1}>
-                            <div className="group relative p-8 rounded-2xl border-2 border-border bg-card hover:border-accent/30 transition-colors">
+                            <div className="relative p-8 rounded-2xl border border-border bg-card hover:border-accent transition-colors shadow-sm">
                                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
                                     <span className="text-primary font-semibold tracking-wider text-sm uppercase">{study.client}</span>
                                     <div className="flex gap-2 flex-wrap">
@@ -81,14 +84,14 @@ export default function CaseStudiesPage() {
                                         ))}
                                     </div>
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                                     {study.title}
                                 </h2>
                                 <p className="text-muted-foreground text-lg mb-6">
                                     {study.summary}
                                 </p>
-                                <Link href="/contact" className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors">
-                                    Read full case study <ArrowRight className="ml-2 w-4 h-4" />
+                                <Link href={`/case-studies/${study.id}`} className="inline-flex items-center text-muted-foreground hover:text-primary font-semibold transition-colors group">
+                                    Read full case study <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </Link>
                             </div>
                         </FadeIn>
@@ -118,7 +121,7 @@ export default function CaseStudiesPage() {
 
                     <div className="relative z-10">
                         <FadeIn>
-                            <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Want similar results for your firm?</h2>
+                            <h2 className="text-3xl md:text-5xl font-medium text-primary-foreground tracking-tight mb-6">Want Similar Results for Your Firm?</h2>
                             <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-10">Schedule a discovery call to explore how we can custom-engineer an automation infrastructure for your practice.</p>
                         </FadeIn>
                         <FadeIn delay={0.2}>
@@ -137,7 +140,7 @@ export default function CaseStudiesPage() {
                                     </ShimmerButton>
                                 </Link>
                             </div>
-                            <p className="mt-6 text-xs text-primary-foreground/50">No commitment required. Free initial audit.</p>
+                            <p className="mt-6 text-xs text-primary-foreground/50">Free consultation. No commitment required</p>
                         </FadeIn>
                     </div>
                 </div>

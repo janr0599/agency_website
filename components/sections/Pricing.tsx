@@ -32,7 +32,7 @@ export function Pricing() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className="p-8 md:p-10 rounded-2xl border border-border bg-card flex flex-col h-full relative overflow-hidden group hover:border-accent/30 transition-colors"
+                    className="p-8 md:p-10 rounded-2xl border border-border bg-card flex flex-col h-full relative overflow-hidden group hover:border-accent transition-colors"
                 >
                     <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                         <Rocket className="w-24 h-24 text-accent" />
@@ -61,7 +61,7 @@ export function Pricing() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="p-8 md:p-10 rounded-2xl border border-border bg-secondary flex flex-col h-full relative overflow-hidden group hover:border-accent/30 transition-colors"
+                    className="p-8 md:p-10 rounded-2xl border border-border bg-secondary flex flex-col h-full relative overflow-hidden group hover:border-accent transition-colors"
                 >
                     <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                         <ShieldCheck className="w-24 h-24 text-accent" />

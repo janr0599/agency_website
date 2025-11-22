@@ -55,7 +55,8 @@ export default function ContactPage() {
                     </div>
 
                     <div className="pt-4">
-                        <ShimmerButton className="w-full" background="hsl(var(--primary))">
+                        <ShimmerButton className="w-full" background="hsl(var(--primary))" shimmerSize="0.30em" shimmerColor="#0d9488"
+                            shimmerDuration="2s">
                             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                                 Request Audit
                             </span>
