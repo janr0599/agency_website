@@ -153,8 +153,8 @@ const Icons = {
 };
 
 const DocumentIcon = ({ className }: { className?: string }) => (
-    <div className={cn("flex items-center justify-center rounded-lg bg-teal-100", className)}>
-        <Files className="h-6 w-6 text-teal-600" />
+    <div className={cn("flex items-center justify-center rounded-lg bg-orange-100", className)}>
+        <Files className="h-6 w-6 text-orange-600" />
     </div>
 );
 
@@ -171,8 +171,8 @@ const SecurityIcon = ({ className }: { className?: string }) => (
 );
 
 const WorkflowIcon = ({ className }: { className?: string }) => (
-    <div className={cn("flex items-center justify-center rounded-lg bg-orange-100", className)}>
-        <Workflow className="h-6 w-6 text-orange-600" />
+    <div className={cn("flex items-center justify-center rounded-lg bg-teal-100", className)}>
+        <Workflow className="h-6 w-6 text-teal-600" />
     </div>
 );
 
@@ -196,7 +196,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-orange-500/50",
     },
     {
         name: "Case Management",
@@ -205,7 +205,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-violet-500/50",
     },
     {
         name: "Client Onboarding",
@@ -214,7 +214,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-blue-500/50",
     },
     {
         name: "Workflow Integration",
@@ -227,7 +227,7 @@ const services = [
                 <AnimatedBeamDemo />
             </div>
         ),
-        className: "md:col-span-2 md:row-span-2 transition-all duration-300 ease-out",
+        className: "md:col-span-2 md:row-span-2 transition-all duration-300 ease-out hover:border-teal-500/50",
     },
     {
         name: "Security & Compliance",
@@ -236,7 +236,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-indigo-500/50",
     },
     {
         name: "Analytics & Reporting",
@@ -245,7 +245,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-amber-500/50",
     },
 ];
 

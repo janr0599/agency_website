@@ -35,7 +35,7 @@ export default function CTA() {
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link href="/contact" className="w-full sm:w-auto">
                                 <ShimmerButton
-                                    className="w-full px-8 py-3.5 rounded-xl font-medium"
+                                    className="w-full px-8 py-3.5 rounded-2xl font-medium"
                                     background="hsl(var(--background))"
                                     shimmerColor="#0d9488"
                                     shimmerDuration="2s"

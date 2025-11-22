@@ -27,7 +27,7 @@ export default function Navbar() {
 
                 {/* Desktop CTA Buttons */}
                 <div className="hidden lg:flex items-center gap-4">
-                    <Link href="/contact" className="bg-primary text-primary-foreground text-sm font-medium px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors shadow-sm">
+                    <Link href="/contact" className="bg-primary text-primary-foreground text-sm font-medium px-4 py-2 rounded-2xl hover:bg-primary/90 transition-colors shadow-sm">
                         Contact Us
                     </Link>
                 </div>

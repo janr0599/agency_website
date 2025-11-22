@@ -91,7 +91,7 @@ export function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="bg-primary rounded-3xl p-8 md:p-12 text-center md:text-left relative overflow-hidden"
+                className="bg-primary rounded-2xl p-8 md:p-12 text-center md:text-left relative overflow-hidden"
             >
                 {/* Decorative background elements */}
                 <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
@@ -103,8 +103,8 @@ export function Pricing() {
                         <p className="text-primary-foreground/70 mb-8">
                             Our comprehensive engagement model ensures you get value from day one and sustainable growth forever.
                         </p>
-                        <Link href="/contact" className="w-full md:w-auto">
-                            <div className="group relative overflow-hidden rounded-xl bg-accent px-8 py-4 transition-all hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/20">
+                        <Link href="/contact" className="inline-block">
+                            <div className="group relative overflow-hidden rounded-2xl bg-accent px-8 py-4 transition-all hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/20">
                                 <AnimatedShinyText className="inline-flex items-center justify-center gap-2 text-lg font-medium text-primary-foreground transition ease-out hover:text-primary-foreground/90 hover:duration-300 bg-gradient-to-r from-transparent via-white/80 via-50% to-transparent dark:via-white/80">
                                     <span>Schedule a Free Discovery Call</span>
                                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -130,7 +130,7 @@ export function Pricing() {
                         ].map((benefit, index) => (
                             <div key={index} className="flex items-start gap-3">
                                 <div className="mt-1 w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                                    <Check className="w-3 h-3 text-accent" />
+                                    <Check className="w-3 h-3 text-teal-400" />
                                 </div>
                                 <span className="text-primary-foreground/80">{benefit}</span>
                             </div>

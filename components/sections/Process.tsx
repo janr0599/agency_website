@@ -30,13 +30,16 @@ export default function Process() {
                 </motion.div>
 
                 <div className="relative">
-                    {/* Connecting line with gradient */}
+                    {/* Connecting line with gradient - Teal → Blue → Violet → Emerald */}
                     <motion.div
                         initial={{ opacity: 0, scaleX: 0 }}
                         whileInView={{ opacity: 1, scaleX: 1 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
                         viewport={{ once: true }}
-                        className="hidden lg:block absolute top-[72px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent origin-left"
+                        className="hidden lg:block absolute top-[72px] left-[10%] right-[10%] h-[2px] origin-left"
+                        style={{
+                            background: 'linear-gradient(to right, rgba(20, 184, 166, 0.5) 0%, rgba(59, 130, 246, 0.5) 33%, rgba(139, 92, 246, 0.5) 66%, rgba(16, 185, 129, 0.5) 100%)'
+                        }}
                     ></motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -62,6 +65,23 @@ export default function Process() {
                                     tailored to your practice.
                                 </p>
                             </div>
+
+                            {/* Vertical line after step 1 */}
+                            {/* Mobile: Teal to Blue | Tablet: Teal to Violet (connects to step 3) */}
+                            <motion.div
+                                initial={{ opacity: 0, scaleY: 0 }}
+                                whileInView={{ opacity: 1, scaleY: 1 }}
+                                transition={{ duration: 0.6, delay: 0.3 }}
+                                viewport={{ once: true }}
+                                className="md:hidden absolute left-1/2 -bottom-8 w-[2px] h-8 bg-gradient-to-b from-teal-500/50 to-blue-500/50 origin-top"
+                            ></motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, scaleY: 0 }}
+                                whileInView={{ opacity: 1, scaleY: 1 }}
+                                transition={{ duration: 0.6, delay: 0.3 }}
+                                viewport={{ once: true }}
+                                className="hidden md:block lg:hidden absolute left-1/2 -bottom-8 w-[2px] h-8 bg-gradient-to-b from-teal-500/50 to-violet-500/50 origin-top"
+                            ></motion.div>
                         </motion.div>
 
                         {/* Step 2 - Development (Blue) */}
@@ -86,6 +106,23 @@ export default function Process() {
                                     and systems.
                                 </p>
                             </div>
+
+                            {/* Vertical line after step 2 */}
+                            {/* Mobile: Blue to Violet | Tablet: Blue to Emerald (connects to step 4) */}
+                            <motion.div
+                                initial={{ opacity: 0, scaleY: 0 }}
+                                whileInView={{ opacity: 1, scaleY: 1 }}
+                                transition={{ duration: 0.6, delay: 0.4 }}
+                                viewport={{ once: true }}
+                                className="md:hidden absolute left-1/2 -bottom-8 w-[2px] h-8 bg-gradient-to-b from-blue-500/50 to-violet-500/50 origin-top"
+                            ></motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, scaleY: 0 }}
+                                whileInView={{ opacity: 1, scaleY: 1 }}
+                                transition={{ duration: 0.6, delay: 0.4 }}
+                                viewport={{ once: true }}
+                                className="hidden md:block lg:hidden absolute left-1/2 -bottom-8 w-[2px] h-8 bg-gradient-to-b from-blue-500/50 to-emerald-500/50 origin-top"
+                            ></motion.div>
                         </motion.div>
 
                         {/* Step 3 - Delivery (Violet) */}
@@ -109,6 +146,15 @@ export default function Process() {
                                     We deploy your custom workflows, train your team, and ensure everything runs smoothly from day one.
                                 </p>
                             </div>
+
+                            {/* Vertical line after step 3 - Violet to Emerald (mobile only) */}
+                            <motion.div
+                                initial={{ opacity: 0, scaleY: 0 }}
+                                whileInView={{ opacity: 1, scaleY: 1 }}
+                                transition={{ duration: 0.6, delay: 0.5 }}
+                                viewport={{ once: true }}
+                                className="md:hidden absolute left-1/2 -bottom-8 w-[2px] h-8 bg-gradient-to-b from-violet-500/50 to-emerald-500/50 origin-top"
+                            ></motion.div>
                         </motion.div>
 
                         {/* Step 4 - Support & Scale (Emerald) */}
