@@ -42,7 +42,7 @@ export default function CTA() {
                                     shimmerSize="0.30em"
                                 >
                                     <span className="flex items-center justify-center gap-2 text-foreground">
-                                        Book a Strategy Call
+                                        Schedule a Discovery Call
                                     </span>
                                 </ShimmerButton>
                             </Link>
