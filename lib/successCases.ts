@@ -22,10 +22,10 @@ export const successCases: CaseStudy[] = [
         challenge:
             "The firm spent valuable attorney time on discovery calls with leads who ultimately did not meet the stringent EB-2 NIW criteria. The firm needed to automate the screening and intake process to only focus on high-value prospects.",
         solution:
-            "We created an intelligent, automated **lead qualification workflow** using **n8n**. A detailed pre-screening form collects critical eligibility data. **n8n immediately processes the responses** against firm-defined eligibility rules. Qualified leads are auto-scheduled for a discovery call and pre-populated into the firm's CRM, while unqualified leads receive a personalized, helpful referral email—saving attorney time and offering a positive client experience for everyone.",
+            "We created an intelligent, automated lead qualification workflow using n8n. A detailed pre-screening form collects critical eligibility data. n8n immediately processes the responses against firm-defined eligibility rules. Qualified leads are auto-scheduled for a discovery call and pre-populated into the firm's CRM, while unqualified leads receive a personalized, helpful referral email—saving attorney time and offering a positive client experience for everyone.",
         results: [
             "Elimination of 95% of unqualified discovery calls",
-            "Attorneys recovered **10 hours of non-billable time per week**",
+            "Attorneys recovered 10 hours of non-billable time per week",
             "Time-to-engagement for high-value leads reduced by 72 hours",
             "Client satisfaction maintained with personalized rejection/referral paths"
         ],
