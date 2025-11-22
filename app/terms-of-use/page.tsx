@@ -29,7 +29,7 @@ export default function TermsOfUsePage() {
         },
         {
             heading: "6. Governing Law",
-            content: "Any claim relating to PraxisFlow's website shall be governed by the laws of the State of New York without regard to its conflict of law provisions."
+            content: "Any claim relating to PraxisFlow's website shall be governed by the laws of the State of Massachussets without regard to its conflict of law provisions."
         }
     ];
 

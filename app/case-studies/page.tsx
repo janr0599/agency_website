@@ -6,29 +6,7 @@ import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 
-const caseStudies = [
-    {
-        id: "summit-legal-group",
-        client: "Summit Legal Group",
-        title: "Reducing Client Onboarding Time by 75%",
-        summary: "How we implemented a fully automated intake system that syncs directly with Clio, saving 15 hours per week.",
-        tags: ["Intake Automation", "Clio Integration", "Family Law"],
-    },
-    {
-        id: "lex-partners-llp",
-        client: "Lex Partners LLP",
-        title: "Automating Complex Estate Planning Documents",
-        summary: "A custom document generation engine that creates 50+ page estate plans in under 3 minutes based on client questionnaire data.",
-        tags: ["Document Gen", "Estate Planning", "Zero-Error"],
-    },
-    {
-        id: "vanguard-litigation",
-        client: "Vanguard Litigation",
-        title: "Seamless Discovery Management",
-        summary: "Building a custom portal for client evidence upload and automatic categorization, streamlining the discovery phase.",
-        tags: ["Litigation Support", "Client Portal", "File Management"],
-    },
-];
+import { successCases } from "@/lib/successCases";
 
 export default function CaseStudiesPage() {
     return (
@@ -71,24 +49,22 @@ export default function CaseStudiesPage() {
             {/* Case Studies Grid */}
             <section className="py-12 px-6">
                 <div className="max-w-5xl mx-auto space-y-8">
-                    {caseStudies.map((study, idx) => (
+                    {successCases.map((study, idx) => (
                         <FadeIn key={idx} delay={idx * 0.1}>
                             <div className="relative p-8 rounded-2xl border border-border bg-card hover:border-accent transition-colors shadow-sm">
                                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                                    <span className="text-primary font-semibold tracking-wider text-sm uppercase">{study.client}</span>
+                                    <span className="text-primary font-semibold tracking-wider text-sm uppercase">{study.clientName}</span>
                                     <div className="flex gap-2 flex-wrap">
-                                        {study.tags.map((tag) => (
-                                            <span key={tag} className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full border border-border">
-                                                {tag}
-                                            </span>
-                                        ))}
+                                        <span className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full border border-border">
+                                            {study.industry}
+                                        </span>
                                     </div>
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                                     {study.title}
                                 </h2>
-                                <p className="text-muted-foreground text-lg mb-6">
-                                    {study.summary}
+                                <p className="text-muted-foreground text-lg mb-6 line-clamp-3">
+                                    {study.challenge}
                                 </p>
                                 <Link href={`/case-studies/${study.id}`} className="inline-flex items-center text-muted-foreground hover:text-primary font-semibold transition-colors group">
                                     Read full case study <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
