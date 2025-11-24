@@ -1,10 +1,9 @@
 "use client"
 
-import React from "react"
 import { FadeIn } from "@/components/ui/fade-in"
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { cn } from "@/lib/utils"
-import { Zap, Users, TrendingUp, Target, Lightbulb, Shield } from "lucide-react"
+import { Zap, Users, TrendingUp, Target, Shield, HeartHandshake } from "lucide-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { ShimmerButton } from "@/components/ui/shimmer-button"
@@ -95,7 +94,7 @@ export default function AboutPage() {
 
                                 {/* Decorative icon - positioned in card corner */}
                                 <div className="absolute bottom-6 right-6 w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
-                                    <Users className="w-8 h-8 text-white/60" />
+                                    <HeartHandshake className="w-8 h-8 text-white/60" />
                                 </div>
 
                                 <div className="absolute inset-0 flex items-center justify-center p-10">

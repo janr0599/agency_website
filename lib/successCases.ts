@@ -11,29 +11,12 @@ export interface CaseStudy {
     testimonial?: string;
     testimonialAuthor?: string;
     testimonialRole?: string;
+    software: string[];
+    timeline: string;
+    keyResult: string;
 }
 
 export const successCases: CaseStudy[] = [
-    {
-        id: "niw-lead-qual",
-        clientName: "Elite Global Counsel",
-        title: "Instant Qualification: Screening Out Non-NIW Leads",
-        industry: "Business Immigration",
-        challenge:
-            "The firm spent valuable attorney time on discovery calls with leads who ultimately did not meet the stringent EB-2 NIW criteria. The firm needed to automate the screening and intake process to only focus on high-value prospects.",
-        solution:
-            "We created an intelligent, automated lead qualification workflow using n8n. A detailed pre-screening form collects critical eligibility data. n8n immediately processes the responses against firm-defined eligibility rules. Qualified leads are auto-scheduled for a discovery call and pre-populated into the firm's CRM, while unqualified leads receive a personalized, helpful referral email—saving attorney time and offering a positive client experience for everyone.",
-        results: [
-            "Elimination of 95% of unqualified discovery calls",
-            "Attorneys recovered 10 hours of non-billable time per week",
-            "Time-to-engagement for high-value leads reduced by 72 hours",
-            "Client satisfaction maintained with personalized rejection/referral paths"
-        ],
-        testimonial:
-            "Before PraxisFlow, my calendar was full of time-wasting calls. Now, every consultation is a genuinely qualified opportunity. Our capacity isn't limited by lead volume; it's limited only by our strategic legal bandwidth.",
-        testimonialAuthor: "Adrian Lee",
-        testimonialRole: "Managing Partner",
-    },
     {
         id: "summit-legal-group",
         clientName: "Summit Legal Group",
@@ -53,6 +36,9 @@ export const successCases: CaseStudy[] = [
             "The n8n workflow PraxisFlow built didn't just save us time; it completely professionalized our client onboarding. We're converting leads faster than ever because we're the first to respond with a contract.",
         testimonialAuthor: "Sarah Jenkins",
         testimonialRole: "Managing Partner",
+        software: ["n8n", "Clio Manage", "DocuSign", "Slack", "Typeform"],
+        timeline: "4 weeks implementation",
+        keyResult: "15+ Hours Saved Weekly"
     },
     {
         id: "lex-partners-llp",
@@ -73,6 +59,9 @@ export const successCases: CaseStudy[] = [
             "I was skeptical about AI, but this system is a game-changer. It does the heavy lifting of drafting, allowing me to focus on the legal strategy and client relationship.",
         testimonialAuthor: "Michael Chang",
         testimonialRole: "Senior Associate",
+        software: ["n8n", "OpenAI API", "SharePoint", "Outlook"],
+        timeline: "6 weeks implementation",
+        keyResult: "98% Faster Drafting"
     },
     {
         id: "vanguard-litigation",
@@ -93,6 +82,9 @@ export const successCases: CaseStudy[] = [
             "Our clients feel more informed and cared for, and our staff isn't tied up on the phone answering the same questions all day. The automated review requests have also significantly boosted our online reputation.",
         testimonialAuthor: "Elena Rodriguez",
         testimonialRole: "Operations Director",
+        software: ["n8n", "Twilio", "SendGrid", "Salesforce"],
+        timeline: "3 weeks implementation",
+        keyResult: "60% Fewer Inbound Calls"
     },
 ];
 
