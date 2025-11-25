@@ -6,32 +6,8 @@ import { cn } from "@/lib/utils";
 export default function TermsOfUsePage() {
     const lastUpdated = "November 22, 2025";
 
-    const sections = [
-        {
-            heading: "1. Acceptance of Terms",
-            content: "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using this websites particular services, you shall be subject to any posted guidelines or rules applicable to such services."
-        },
-        {
-            heading: "2. Use License",
-            content: "Permission is granted to temporarily download one copy of the materials (information or software) on PraxisFlow's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title."
-        },
-        {
-            heading: "3. Disclaimer",
-            content: "The materials on PraxisFlow's website are provided on an 'as is' basis. PraxisFlow makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."
-        },
-        {
-            heading: "4. Limitations",
-            content: "In no event shall PraxisFlow or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on PraxisFlow's website."
-        },
-        {
-            heading: "5. Revisions and Errata",
-            content: "The materials appearing on PraxisFlow's website could include technical, typographical, or photographic errors. PraxisFlow does not warrant that any of the materials on its website are accurate, complete, or current."
-        },
-        {
-            heading: "6. Governing Law",
-            content: "Any claim relating to PraxisFlow's website shall be governed by the laws of the State of Massachussets without regard to its conflict of law provisions."
-        }
-    ];
+
+
 
     return (
         <div className="w-full min-h-screen bg-background">
@@ -59,7 +35,7 @@ export default function TermsOfUsePage() {
                                 <span className="flex h-2 w-2 rounded-full bg-accent"></span>
                                 Legal
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tight">
+                            <h1 className="text-4xl md:text-5xl font-medium text-foreground mb-6 tracking-tight">
                                 Terms of Use
                             </h1>
                             <p className="text-muted-foreground">
@@ -69,17 +45,89 @@ export default function TermsOfUsePage() {
                     </FadeIn>
 
                     <FadeIn delay={0.1}>
-                        <div className="space-y-12 bg-card/50 backdrop-blur-sm border border-border p-8 md:p-12 rounded-2xl shadow-sm">
-                            {sections.map((section, index) => (
-                                <div key={index}>
-                                    <h2 className="text-2xl font-bold text-foreground mb-4">
-                                        {section.heading}
-                                    </h2>
-                                    <p className="text-muted-foreground leading-relaxed text-lg">
-                                        {section.content}
-                                    </p>
-                                </div>
-                            ))}
+                        <div className="space-y-12 p-8 md:p-12">
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">1. Acceptance of Terms</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    By accessing and using PraxisFlow's services, you accept and agree to be bound by the terms and provision
+                                    of this agreement. If you do not agree to abide by the above, please do not use this service.
+                                </p>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">2. Description of Services</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    PraxisFlow provides custom workflow automation solutions for boutique law firms. Our services include
+                                    discovery, development, delivery, and ongoing support for legal process automation.
+                                </p>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">3. User Responsibilities</h2>
+                                <p className="text-muted-foreground leading-relaxed mb-4">As a user, you agree to:</p>
+                                <ul className="space-y-3 text-muted-foreground">
+                                    <li className="flex gap-3">
+                                        <span className="text-accent font-bold">•</span>
+                                        <span>Provide accurate and complete information</span>
+                                    </li>
+                                    <li className="flex gap-3">
+                                        <span className="text-accent font-bold">•</span>
+                                        <span>Maintain confidentiality of login credentials</span>
+                                    </li>
+                                    <li className="flex gap-3">
+                                        <span className="text-accent font-bold">•</span>
+                                        <span>Use services only for lawful purposes</span>
+                                    </li>
+                                    <li className="flex gap-3">
+                                        <span className="text-accent font-bold">•</span>
+                                        <span>Not engage in unauthorized access or misuse</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">4. Intellectual Property Rights</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    All content, features, and functionality of our services are owned by PraxisFlow, its licensors, or other
+                                    providers of such material and are protected by copyright and other intellectual property laws.
+                                </p>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">5. Limitation of Liability</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    To the fullest extent permitted by law, PraxisFlow shall not be liable for any indirect, incidental,
+                                    special, consequential, or punitive damages resulting from your use of or inability to use the services.
+                                </p>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">6. Modifications to Terms</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    PraxisFlow reserves the right to modify these terms at any time. Changes are effective immediately upon
+                                    posting to the website. Your continued use of the service constitutes acceptance of the modified terms.
+                                </p>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">7. Governing Law</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction
+                                    in which PraxisFlow operates, and you irrevocably submit to the exclusive jurisdiction of the courts in
+                                    that location.
+                                </p>
+                            </section>
+
+                            <section className="mb-12">
+                                <h2 className="text-2xl font-medium text-foreground mb-4">8. Contact Us</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    If you have questions about these Terms, please contact us at{" "}
+                                    <a href="mailto:legal@praxisflow.com" className="text-accent hover:text-accent/80 font-medium">
+                                        legal@praxisflow.com
+                                    </a>
+                                    .
+                                </p>
+                            </section>
                         </div>
                     </FadeIn>
                 </div>
