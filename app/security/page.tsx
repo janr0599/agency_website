@@ -45,10 +45,9 @@ export default function SecurityPage() {
                     <FadeIn delay={0.1}>
                         <div className="space-y-16">
                             {/* Intro */}
-                            <div className="text-center max-w-2xl mx-auto">
+                            <div className="text-center max-w-3xl mx-auto">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We take security seriously. Your legal workflows and sensitive data are protected
-                                    with enterprise-grade infrastructure.
+                                    Your legal workflows and sensitive data are protected through diligence, control, and layered technical safeguards.
                                 </p>
                             </div>
 
@@ -59,9 +58,9 @@ export default function SecurityPage() {
                                         <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 text-accent">
                                             <Lock className="w-6 h-6" />
                                         </div>
-                                        <h3 className="text-xl font-semibold text-foreground mb-3">End-to-End Encryption</h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            All data in transit and at rest is encrypted using AES-256 encryption standards.
+                                        <h3 className="text-xl font-semibold text-foreground mb-3">Dedicated Infrastructure</h3>
+                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                            Private, dedicated server environment ensuring your data is isolated from other clients and public internet traffic.
                                         </p>
                                     </div>
                                 </div>
@@ -71,9 +70,9 @@ export default function SecurityPage() {
                                         <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 text-accent">
                                             <Shield className="w-6 h-6" />
                                         </div>
-                                        <h3 className="text-xl font-semibold text-foreground mb-3">Enterprise Security</h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            SOC 2 Type II certified infrastructure with continuous security monitoring and threat detection.
+                                        <h3 className="text-xl font-semibold text-foreground mb-3">Robust Encryption</h3>
+                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                            Industry-standard encryption safeguarding data at rest and in transit, including workflow credentials.
                                         </p>
                                     </div>
                                 </div>
@@ -83,9 +82,9 @@ export default function SecurityPage() {
                                         <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 text-accent">
                                             <Eye className="w-6 h-6" />
                                         </div>
-                                        <h3 className="text-xl font-semibold text-foreground mb-3">Access Control</h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            Role-based access controls and multi-factor authentication for all user accounts.
+                                        <h3 className="text-xl font-semibold text-foreground mb-3">Strict Access Control</h3>
+                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                            Access restricted using cryptographic keys and Multi-Factor Authentication (MFA) for all critical accounts.
                                         </p>
                                     </div>
                                 </div>
@@ -95,9 +94,9 @@ export default function SecurityPage() {
                                         <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 text-accent">
                                             <ShieldCheck className="w-6 h-6" />
                                         </div>
-                                        <h3 className="text-xl font-semibold text-foreground mb-3">Compliance</h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            Compliant with HIPAA, GDPR, and industry-standard data protection regulations.
+                                        <h3 className="text-xl font-semibold text-foreground mb-3">Redundant Backups</h3>
+                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                            Critical system data is encrypted and securely archived daily to an off-site storage vault for continuity.
                                         </p>
                                     </div>
                                 </div>
@@ -105,18 +104,16 @@ export default function SecurityPage() {
 
                             {/* Detailed Sections */}
                             <div className="space-y-12">
-                                {/* Data Protection */}
+                                {/* Dedicated & Managed Infrastructure */}
                                 <section>
-                                    <h2 className="text-2xl font-medium text-foreground mb-6">Data Protection</h2>
+                                    <h2 className="text-2xl font-medium text-foreground mb-6">1. Dedicated & Managed Infrastructure</h2>
                                     <p className="text-muted-foreground mb-6">
-                                        JurisFlow implements multiple layers of security to protect your legal workflow data:
+                                        Our workflows run on a private, dedicated server environment, ensuring your data is isolated from other clients and public internet traffic.
                                     </p>
                                     <ul className="space-y-4">
                                         {[
-                                            "Encrypted storage with redundant backups across secure data centers",
-                                            "Regular security audits and penetration testing",
-                                            "24/7 monitoring and threat detection systems",
-                                            "Incident response and disaster recovery protocols"
+                                            <span><strong>Robust Encryption:</strong> All data, including workflow credentials and sensitive client information, is protected with industry-standard encryption standards, safeguarding data at rest and in transit.</span>,
+                                            <span><strong>Platform Stability:</strong> The infrastructure is professionally managed and benefits from the physical and network security standards of our chosen VPS provider. We perform regular vulnerability scanning and patching to maintain system integrity.</span>
                                         ].map((item, i) => (
                                             <li key={i} className="flex gap-3 items-start">
                                                 <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -126,18 +123,17 @@ export default function SecurityPage() {
                                     </ul>
                                 </section>
 
-                                {/* Access & Authentication */}
+                                {/* Strict Access Control */}
                                 <section>
-                                    <h2 className="text-2xl font-medium text-foreground mb-6">Access & Authentication</h2>
+                                    <h2 className="text-2xl font-medium text-foreground mb-6">2. Strict Access Control</h2>
                                     <p className="text-muted-foreground mb-6">
-                                        We implement strict access controls to ensure only authorized personnel can access your data:
+                                        Access to both the application and the underlying server is severely restricted using multiple authentication steps.
                                     </p>
                                     <ul className="space-y-4">
                                         {[
-                                            "Multi-factor authentication (MFA) on all accounts",
-                                            "Role-based access control (RBAC) with principle of least privilege",
-                                            "Session management and automatic timeout protocols",
-                                            "Audit logs tracking all user activities and data access"
+                                            <span><strong>Server Access (SSH):</strong> Access to the VPS is secured using cryptographic keys and is restricted to pre-authorized personnel. We enforce Multi-Factor Authentication (MFA) for all critical administrative accounts.</span>,
+                                            <span><strong>Application Access (n8n):</strong> All users accessing the workflow application must utilize Multi-Factor Authentication (MFA).</span>,
+                                            <span><strong>Audit Logging:</strong> All user activities, changes, and workflow executions are meticulously logged and retained, providing a clear audit trail for compliance and review.</span>
                                         ].map((item, i) => (
                                             <li key={i} className="flex gap-3 items-start">
                                                 <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -147,18 +143,35 @@ export default function SecurityPage() {
                                     </ul>
                                 </section>
 
-                                {/* Compliance & Certifications */}
+                                {/* Data Protection and Continuity */}
                                 <section>
-                                    <h2 className="text-2xl font-medium text-foreground mb-6">Compliance & Certifications</h2>
+                                    <h2 className="text-2xl font-medium text-foreground mb-6">3. Data Protection and Continuity</h2>
                                     <p className="text-muted-foreground mb-6">
-                                        JurisFlow maintains compliance with industry standards and regulations:
+                                        We ensure your automated processes are resilient and your data is recoverable under any circumstance.
                                     </p>
                                     <ul className="space-y-4">
                                         {[
-                                            <span><strong>SOC 2 Type II:</strong> Annual third-party security audits</span>,
-                                            <span><strong>GDPR:</strong> Full compliance with EU data protection regulations</span>,
-                                            <span><strong>HIPAA:</strong> Compliance for handling sensitive healthcare data</span>,
-                                            <span><strong>ISO 27001:</strong> Information security management certification</span>
+                                            <span><strong>Redundant Backups:</strong> Critical system data and workflow configurations are encrypted on our server and then securely archived daily to an off-site storage vault.</span>,
+                                            <span><strong>Confidentiality by Design:</strong> Our workflows are designed following the principle of data minimization—we only process and store the necessary data required to execute your legal tasks, limiting exposure.</span>
+                                        ].map((item, i) => (
+                                            <li key={i} className="flex gap-3 items-start">
+                                                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                                                <span className="text-muted-foreground">{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </section>
+
+                                {/* Legal Standards & Reporting*/}
+                                <section>
+                                    <h2 className="text-2xl font-medium text-foreground mb-6">4. Alignment with Legal Standards & Reporting</h2>
+                                    <p className="text-muted-foreground mb-6">
+                                        We ensure your automated processes are resilient and your data is recoverable under any circumstance.
+                                    </p>
+                                    <ul className="space-y-4">
+                                        {[
+                                            <span><strong>Regulatory Alignment:</strong> Our security controls and data handling procedures are built to align with the core principles of data protection regulations (like GDPR and HIPAA), focusing on confidentiality and data integrity.</span>,
+                                            <span><strong>Custom Compliance:</strong> If you have specific regulatory requirements, we work directly with your compliance team to ensure our workflows adhere to your established protocols.</span>
                                         ].map((item, i) => (
                                             <li key={i} className="flex gap-3 items-start">
                                                 <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
