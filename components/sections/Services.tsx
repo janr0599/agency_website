@@ -230,8 +230,8 @@ const services = [
         className: "md:col-span-2 md:row-span-2 transition-all duration-300 ease-out hover:border-teal-500/50",
     },
     {
-        name: "Security & Compliance",
-        description: "Bank-grade encryption, SOC 2 compliance, and role-based access controls.",
+        name: "Security-First",
+        description: "We utilize hardened, self-hosted environments, ensuring your firm's data never resides on vulnerable third-party SaaS databases.",
         Icon: SecurityIcon,
         href: "/contact",
         cta: "Learn more",

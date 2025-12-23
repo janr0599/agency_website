@@ -39,7 +39,7 @@ export default function Hero() {
                                 shimmerSize="0.30em"
                             >
                                 <span className="flex items-center justify-center gap-2 text-primary-foreground">
-                                    Let't talk growth
+                                    Let's talk growth
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </span>
                             </ShimmerButton>

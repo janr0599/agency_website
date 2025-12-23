@@ -163,7 +163,7 @@ export default function AboutPage() {
                                 </div>
                                 <h3 className="text-xl font-semibold text-foreground mb-3">Human-Centric</h3>
                                 <p className="text-muted-foreground leading-relaxed relative z-10">
-                                    We automate tasks, not relationships. Technology should enhance the client experience, not replace it.
+                                    We don't just automate tasks; we optimize the socio-technical system of your firm so your legal team can focus on high-value judgment, not low-value labor
                                 </p>
                             </div>
                         </motion.div>
