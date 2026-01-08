@@ -19,7 +19,7 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-medium text-foreground tracking-tighter mb-6 max-w-4xl mx-auto leading-[1.1]">
-                        Automate the trivial.<br />
+                        Automatiza the trivial.<br />
                         <span className="text-accent">Focus on the law.</span>
                     </h1>
 
