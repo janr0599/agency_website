@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         siteName: "PraxisFlow Automations",
         images: [
             {
-                url: "/og-image.jpg",
+                url: "/logo-text.png",
                 width: 1200,
                 height: 630,
                 alt: "PraxisFlow Automations",
@@ -43,13 +43,25 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "PraxisFlow Automations | Legal Automation Agency",
         description: "We simplify complex legal operations through intelligent, custom automation — freeing attorneys to focus on billable work.",
-        images: ["/og-image.jpg"],
+        images: ["/logo-text.png"],
         creator: "@praxisflow",
     },
     icons: {
-        icon: "/logo.svg",
-        shortcut: "/logo.svg",
-        apple: "/logo.svg",
+        icon: [
+            { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+            { url: "/favicon.ico", sizes: "any" }, // Fallback
+            { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+        ],
+        shortcut: "/favicon.ico",
+        apple: [
+            { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+        ],
+        other: [
+            {
+                rel: "mask-icon",
+                url: "/logo.svg", // modern websites
+            },
+        ],
     },
     robots: {
         index: true,

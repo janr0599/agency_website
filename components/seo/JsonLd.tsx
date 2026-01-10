@@ -3,15 +3,15 @@ import React from "react";
 const JsonLd = () => {
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "ProfessionalService",
         name: "PraxisFlow Automations",
         url: "https://praxisflow.com",
-        logo: "https://praxisflow.com/logo.svg",
+        logo: "https://praxisflow.com/favicon-32x32.png",
         description: "We simplify complex legal operations through intelligent, custom automation.",
         address: {
             "@type": "PostalAddress",
-            addressLocality: "San Francisco", // Placeholder
-            addressRegion: "CA",
+            addressLocality: "Westford",
+            addressRegion: "MA",
             addressCountry: "US",
         },
         contactPoint: {
