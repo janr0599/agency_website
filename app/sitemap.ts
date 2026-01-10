@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://praxisflow.com'
+    const baseUrl = 'https://www.praxisflow.com'
 
     return [
         {

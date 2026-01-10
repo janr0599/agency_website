@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: ['/', '/_next/static/images/'],
             disallow: '/private/',
         },
-        sitemap: 'https://praxisflow.com/sitemap.xml',
+        sitemap: 'https://www.praxisflow.com/sitemap.xml',
     }
 }

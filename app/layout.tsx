@@ -8,7 +8,7 @@ import JsonLd from "../components/seo/JsonLd";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://praxisflow.com"),
+    metadataBase: new URL("https://www.praxisflow.com"),
     title: {
         default: "PraxisFlow Automations | Legal Automation Agency",
         template: "%s | PraxisFlow Automations",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         siteName: "PraxisFlow Automations",
         images: [
             {
-                url: "/logo-text.png",
+                url: "/logo-text.svg",
                 width: 1200,
                 height: 630,
                 alt: "PraxisFlow Automations",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "PraxisFlow Automations | Legal Automation Agency",
         description: "We simplify complex legal operations through intelligent, custom automation — freeing attorneys to focus on billable work.",
-        images: ["/logo-text.png"],
+        images: ["/logo-text.svg"],
         creator: "@praxisflow",
     },
     icons: {
