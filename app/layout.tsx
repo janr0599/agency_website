@@ -48,19 +48,18 @@ export const metadata: Metadata = {
     },
     icons: {
         icon: [
+            // 1. svg for modern browsers
+            { url: "/logo.svg", type: "image/svg+xml" },
+
+            // 2. Google search results
             { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-            { url: "/favicon.ico", sizes: "any" }, // Fallback
             { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+
+            // 3. Fallback for older browsers
+            { url: "/favicon.ico", sizes: "any" },
         ],
-        shortcut: "/favicon.ico",
         apple: [
             { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-        ],
-        other: [
-            {
-                rel: "mask-icon",
-                url: "/logo.svg", // modern websites
-            },
         ],
     },
     robots: {
