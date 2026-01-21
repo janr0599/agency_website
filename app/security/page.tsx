@@ -3,6 +3,39 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Lock, Shield, Eye, ShieldCheck, CheckCircle2 } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Security",
+    description: "Your legal workflows and sensitive data are protected through dedicated infrastructure, strict access controls, and layered safeguards.",
+    keywords: [
+        "Legal Data Security",
+        "Law Firm Compliance",
+        "Automation Security",
+        "Data Protection",
+        "GDPR Compliance",
+    ],
+    openGraph: {
+        title: "Security & Compliance | PraxisFlow Automations",
+        description: "Your legal workflows and sensitive data are protected through dedicated infrastructure and layered safeguards.",
+        url: "https://www.praxisflow.com/security",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "PraxisFlow Security Standards",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Security & Compliance | PraxisFlow Automations",
+        description: "Your legal workflows and sensitive data are protected through dedicated infrastructure and layered safeguards.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function SecurityPage() {
     const lastUpdated = "November 25, 2025";

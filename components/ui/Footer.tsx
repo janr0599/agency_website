@@ -10,7 +10,9 @@ export default function Footer() {
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
                         <div className="col-span-2">
                             <div className="mb-6">
-                                <Image src="/logo-text.svg" alt="PraxisFlow Logo" width={98} height={98} className="rounded" />
+                                <a href="/" className="inline-block">
+                                    <Image src="/logo-text.svg" alt="PraxisFlow Logo" width={98} height={98} className="rounded" />
+                                </a>
                             </div>
                             <p className="text-sm text-muted-foreground max-w-xs mb-6">Automating the legal industry, one workflow at a time. Secure, efficient, and tailored for growth.</p>
                             <div className="flex gap-4 text-muted-foreground">
@@ -23,8 +25,8 @@ export default function Footer() {
                         <div>
                             <h4 className="font-medium text-foreground mb-4 text-sm">Product</h4>
                             <ul className="space-y-3 text-sm text-muted-foreground">
-                                <li><a href="/#services" className="hover:text-accent transition-colors">Services</a></li>
-                                <li><a href="/#pricing" className="hover:text-accent transition-colors">Pricing</a></li>
+                                <li><a href="/integrations" className="hover:text-accent transition-colors">Integrations</a></li>
+                                <li><a href="/pricing" className="hover:text-accent transition-colors">Pricing</a></li>
                                 <li><a href="/case-studies" className="hover:text-accent transition-colors">Case Studies</a></li>
                             </ul>
                         </div>
@@ -33,7 +35,7 @@ export default function Footer() {
                             <h4 className="font-medium text-foreground mb-4 text-sm">Company</h4>
                             <ul className="space-y-3 text-sm text-muted-foreground">
                                 <li><a href="/about" className="hover:text-accent transition-colors">About</a></li>
-                                <li><a href="/#testimonials" className="hover:text-accent transition-colors">Customers</a></li>
+                                <li><a href="/#process" className="hover:text-accent transition-colors">Process</a></li>
                                 <li><a href="/contact" className="hover:text-accent transition-colors">Contact</a></li>
                             </ul>
                         </div>

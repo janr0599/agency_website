@@ -1,5 +1,37 @@
 import React from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact",
+    description: "Start your firm's transformation. Schedule a free workflow audit to identify your biggest automation opportunities.",
+    keywords: [
+        "Contact PraxisFlow",
+        "Legal Automation Consultation",
+        "Workflow Audit",
+        "Law Firm Automation Help",
+    ],
+    openGraph: {
+        title: "Contact Us | PraxisFlow Automations",
+        description: "Start your firm's transformation. Schedule a free workflow audit to identify your biggest automation opportunities.",
+        url: "https://www.praxisflow.com/contact",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Contact PraxisFlow",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Us | PraxisFlow Automations",
+        description: "Start your firm's transformation. Schedule a free workflow audit to identify your biggest automation opportunities.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function ContactPage() {
     return (

@@ -5,8 +5,40 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
 
 import { successCases } from "@/lib/successCases";
+
+export const metadata: Metadata = {
+    title: "Case Studies",
+    description: "See how we've helped boutique law firms save thousands of hours and increase revenue through custom automation.",
+    keywords: [
+        "Legal Automation Case Studies",
+        "Law Firm Success Stories",
+        "Automation ROI",
+        "Legal Tech Results",
+    ],
+    openGraph: {
+        title: "Case Studies | PraxisFlow Automations",
+        description: "See how we've helped boutique law firms save thousands of hours and increase revenue through custom automation.",
+        url: "https://www.praxisflow.com/case-studies",
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "PraxisFlow Case Studies",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Case Studies | PraxisFlow Automations",
+        description: "See how we've helped boutique law firms save thousands of hours and increase revenue through custom automation.",
+        images: ["/og-image.png"],
+    },
+};
 
 export default function CaseStudiesPage() {
     return (
