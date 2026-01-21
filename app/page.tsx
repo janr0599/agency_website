@@ -2,8 +2,9 @@ import Hero from "../components/sections/Hero";
 import Integrations from "../components/sections/Integrations";
 import Services from "../components/sections/Services";
 import Process from "../components/sections/Process";
-import { Pricing } from "../components/sections/Pricing";
-import Testimonials from "../components/sections/Testimonials";
+import { PathwaysToEngagement } from "../components/sections/PathwaysToEngagement";
+// import Testimonials from "../components/sections/Testimonials";
+import { FAQsHomepage } from "../components/sections/HomeFaqs";
 import CTA from "../components/sections/CTA";
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
             <Integrations />
             <Services />
             <Process />
-            <Pricing />
-            <Testimonials />
+            <PathwaysToEngagement />
+            {/* <Testimonials /> */}
+            <FAQsHomepage />
             <CTA />
         </div>
     );

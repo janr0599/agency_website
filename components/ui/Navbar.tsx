@@ -17,12 +17,10 @@ export default function Navbar() {
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-                    <Link href="/#integrations" className="hover:text-foreground transition-colors">Integrations</Link>
-                    <Link href="/#services" className="hover:text-foreground transition-colors">Services</Link>
-                    <Link href="/#process" className="hover:text-foreground transition-colors">Process</Link>
-                    <Link href="/#pricing" className="hover:text-foreground transition-colors">Pricing</Link>
                     <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
                     <Link href="/case-studies" className="hover:text-foreground transition-colors">Case Studies</Link>
+                    <Link href="/integrations" className="hover:text-foreground transition-colors">Integrations</Link>
+                    <Link href="/pricing" className="hover:text-foreground transition-colors">Pricing</Link>
                 </div>
 
                 {/* Desktop CTA Buttons */}
@@ -47,34 +45,6 @@ export default function Navbar() {
                 <div className="lg:hidden bg-background border-b border-border">
                     <div className="max-w-7xl mx-auto px-6 py-4 space-y-4">
                         <Link
-                            href="/#integrations"
-                            className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Integrations
-                        </Link>
-                        <Link
-                            href="/#services"
-                            className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Services
-                        </Link>
-                        <Link
-                            href="/#process"
-                            className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Process
-                        </Link>
-                        <Link
-                            href="/#pricing"
-                            className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Pricing
-                        </Link>
-                        <Link
                             href="/about"
                             className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                             onClick={() => setIsMenuOpen(false)}
@@ -87,6 +57,20 @@ export default function Navbar() {
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Case Studies
+                        </Link>
+                        <Link
+                            href="/integrations"
+                            className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Integrations
+                        </Link>
+                        <Link
+                            href="/pricing"
+                            className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Pricing
                         </Link>
                         <div className="pt-4 border-t border-border space-y-3">
                             <Link

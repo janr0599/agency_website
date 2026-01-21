@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Files, Users, Scale, Workflow, Shield, BarChart } from "lucide-react";
+import { Files, Users, Scale, Workflow, Shield, BarChart, Target, Inbox, Heart, Zap, Repeat, Megaphone, Wallet } from "lucide-react";
 import { BentoCard, BentoGrid } from "../ui/bento-grid";
 import { AnimatedBeam } from "../ui/animated-beam";
 import { FadeIn } from "../ui/fade-in";
@@ -152,21 +152,21 @@ const Icons = {
     ),
 };
 
-const DocumentIcon = ({ className }: { className?: string }) => (
+const MarketingIcon = ({ className }: { className?: string }) => (
     <div className={cn("flex items-center justify-center rounded-lg bg-orange-100", className)}>
-        <Files className="h-6 w-6 text-orange-600" />
+        <Megaphone className="h-6 w-6 text-orange-600" />
     </div>
 );
 
-const CaseIcon = ({ className }: { className?: string }) => (
+const IntakeIcon = ({ className }: { className?: string }) => (
     <div className={cn("flex items-center justify-center rounded-lg bg-purple-100", className)}>
-        <Scale className="h-6 w-6 text-purple-600" />
+        <Inbox className="h-6 w-6 text-purple-600" />
     </div>
 );
 
-const SecurityIcon = ({ className }: { className?: string }) => (
-    <div className={cn("flex items-center justify-center rounded-lg bg-indigo-100", className)}>
-        <Shield className="h-6 w-6 text-indigo-600" />
+const BillingIcon = ({ className }: { className?: string }) => (
+    <div className={cn("flex items-center justify-center rounded-lg bg-emerald-100", className)}>
+        <Wallet className="h-6 w-6 text-emerald-600" />
     </div>
 );
 
@@ -176,41 +176,41 @@ const WorkflowIcon = ({ className }: { className?: string }) => (
     </div>
 );
 
-const OnboardingIcon = ({ className }: { className?: string }) => (
+const RetentionIcon = ({ className }: { className?: string }) => (
     <div className={cn("flex items-center justify-center rounded-lg bg-blue-100", className)}>
-        <Users className="h-6 w-6 text-blue-600" />
+        <Heart className="h-6 w-6 text-blue-600" />
     </div>
 );
 
-const AnalyticsIcon = ({ className }: { className?: string }) => (
+const PostEngagementIcon = ({ className }: { className?: string }) => (
     <div className={cn("flex items-center justify-center rounded-lg bg-amber-100", className)}>
-        <BarChart className="h-6 w-6 text-amber-600" />
+        <Repeat className="h-6 w-6 text-amber-600" />
     </div>
 );
 
 const services = [
     {
-        name: "Document Automation",
-        description: "Generate NDAs, retainer agreements, and pleadings instantly from client intake forms.",
-        Icon: DocumentIcon,
+        name: "Marketing",
+        description: "Automate lead capture, nurturing sequences, and ad performance tracking.",
+        Icon: MarketingIcon,
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
         className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-orange-500/50",
     },
     {
-        name: "Case Management",
-        description: "Sync deadlines to calendars, auto-tag emails to matter files, and receive daily digests.",
-        Icon: CaseIcon,
+        name: "Intake",
+        description: "Instant conflict checks, automated qualification, and one-click retainer generation.",
+        Icon: IntakeIcon,
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
         className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-violet-500/50",
     },
     {
-        name: "Client Onboarding",
-        description: "Automated email sequences, secure portal creation, and KYC checks triggered instantly.",
-        Icon: OnboardingIcon,
+        name: "Client Retention",
+        description: "Keep clients happy with automated updates, satisfaction surveys, and proactive communication.",
+        Icon: RetentionIcon,
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
@@ -230,18 +230,18 @@ const services = [
         className: "md:col-span-2 md:row-span-2 transition-all duration-300 ease-out hover:border-teal-500/50",
     },
     {
-        name: "Security-First",
-        description: "We utilize hardened, self-hosted environments, ensuring your firm's data never resides on vulnerable third-party SaaS databases.",
-        Icon: SecurityIcon,
+        name: "Billing & Invoicing",
+        description: "Automate invoice generation, payment tracking, and client billing reminders.",
+        Icon: BillingIcon,
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-indigo-500/50",
+        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-emerald-500/50",
     },
     {
-        name: "Analytics & Reporting",
-        description: "Real-time insights on case progress, team productivity, and billable hours.",
-        Icon: AnalyticsIcon,
+        name: "Post Engagement",
+        description: "Track upsell opportunities and automate follow-ups so past clients never get lost in the cracks.",
+        Icon: PostEngagementIcon,
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
@@ -255,10 +255,10 @@ export default function Services() {
             <FadeIn margin="-200px">
                 <div className="mb-16 md:mb-24">
                     <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-4">
-                        Engineering efficiency for legal minds.
+                        Engineering Efficieny for Legal Minds.
                     </h2>
                     <p className="text-muted-foreground max-w-xl text-lg">
-                        Stop copying and pasting data between spreadsheets and contracts. Our systems handle the busy work.
+                        Eliminate the bottlenecks that slow down revenue. We help you build a fancy-looking machine that solves your pain points.
                     </p>
                 </div>
 

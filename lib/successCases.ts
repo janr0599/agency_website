@@ -18,12 +18,12 @@ export interface CaseStudy {
 
 export const successCases: CaseStudy[] = [
     {
-        id: "summit-legal-group",
-        clientName: "Summit Legal Group",
+        id: "family-law-automation",
+        clientName: "Family Law Boutique",
         title: "End-to-End Intake Automation with n8n",
         industry: "Family Law",
         challenge:
-            "Summit Legal Group was overwhelmed by manual lead qualification and data entry. Paralegals spent over 15 hours a week manually transferring data from web forms to Clio Manage, leading to data entry errors and delayed client engagement.",
+            "The firm was overwhelmed by manual lead qualification and data entry. Paralegals spent over 15 hours a week manually transferring data from web forms to Clio Manage, leading to data entry errors and delayed client engagement.",
         solution:
             "We architected a comprehensive n8n workflow to handle the entire intake lifecycle. Now, when a lead submits a form, n8n automatically performs a conflict check, creates a new contact and matter in Clio, generates a custom engagement letter via DocuSign, and notifies the assigned attorney via Slack—all in under 30 seconds.",
         results: [
@@ -34,15 +34,15 @@ export const successCases: CaseStudy[] = [
         ],
         testimonial:
             "The n8n workflow PraxisFlow built didn't just save us time; it completely professionalized our client onboarding. We're converting leads faster than ever because we're the first to respond with a contract.",
-        testimonialAuthor: "Sarah Jenkins",
-        testimonialRole: "Managing Partner",
+        testimonialAuthor: "Managing Partner",
+        testimonialRole: "Family Law Boutique",
         software: ["n8n", "Clio Manage", "DocuSign", "Slack", "Typeform"],
         timeline: "4 weeks implementation",
         keyResult: "15+ Hours Saved Weekly"
     },
     {
-        id: "lex-partners-llp",
-        clientName: "Lex Partners LLP",
+        id: "estate-planning-engine",
+        clientName: "Estate Planning Practice",
         title: "AI-Powered Document Drafting Engine",
         industry: "Estate Planning",
         challenge:
@@ -57,15 +57,15 @@ export const successCases: CaseStudy[] = [
         ],
         testimonial:
             "I was skeptical about AI, but this system is a game-changer. It does the heavy lifting of drafting, allowing me to focus on the legal strategy and client relationship.",
-        testimonialAuthor: "Michael Chang",
-        testimonialRole: "Senior Associate",
+        testimonialAuthor: "Senior Associate",
+        testimonialRole: "Estate Planning Firm",
         software: ["n8n", "OpenAI API", "SharePoint", "Outlook"],
         timeline: "6 weeks implementation",
         keyResult: "98% Faster Drafting"
     },
     {
-        id: "vanguard-litigation",
-        clientName: "Vanguard Litigation",
+        id: "civil-litigation-comms",
+        clientName: "Civil Litigation Firm",
         title: "Automated Client Communication Loop",
         industry: "Civil Litigation",
         challenge:
@@ -80,8 +80,8 @@ export const successCases: CaseStudy[] = [
         ],
         testimonial:
             "Our clients feel more informed and cared for, and our staff isn't tied up on the phone answering the same questions all day. The automated review requests have also significantly boosted our online reputation.",
-        testimonialAuthor: "Elena Rodriguez",
-        testimonialRole: "Operations Director",
+        testimonialAuthor: "Operations Director",
+        testimonialRole: "Civil Litigation Firm",
         software: ["n8n", "Twilio", "SendGrid", "Salesforce"],
         timeline: "3 weeks implementation",
         keyResult: "60% Fewer Inbound Calls"

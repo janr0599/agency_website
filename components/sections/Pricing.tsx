@@ -8,7 +8,7 @@ import { AnimatedShinyText } from "../ui/animated-shiny-text"
 
 export function Pricing() {
     return (
-        <section id="pricing" className="py-24 max-w-7xl mx-auto px-6">
+        <section id="pricing" className="pt-12 pb-24 max-w-7xl mx-auto px-6">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -137,6 +137,23 @@ export function Pricing() {
                         ))}
                     </div>
                 </div>
+            </motion.div>
+
+            {/* Small Project Disclaimer */}
+            <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-center max-w-2xl mx-auto pt-12"
+            >
+                <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">No project is too small.</span> If you have an idea to improve your workflow, we may be able to do it.{" "}
+                    <Link href="/contact" className="text-accent hover:underline underline-offset-4">
+                        Schedule a free consultation
+                    </Link>{" "}
+                    and talk to us.
+                </p>
             </motion.div>
         </section>
     )

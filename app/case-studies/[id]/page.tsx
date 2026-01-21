@@ -71,7 +71,6 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                                     <Icon className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">{caseStudy.clientName}</p>
                                     <p className="text-xs font-medium text-accent uppercase tracking-wider">{caseStudy.industry}</p>
                                 </div>
                             </div>

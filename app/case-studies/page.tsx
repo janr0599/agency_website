@@ -52,8 +52,7 @@ export default function CaseStudiesPage() {
                     {successCases.map((study, idx) => (
                         <FadeIn key={idx} delay={idx * 0.1}>
                             <div className="relative p-8 rounded-2xl border border-border bg-card hover:border-accent transition-colors shadow-sm">
-                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                                    <span className="text-primary font-semibold tracking-wider text-sm uppercase">{study.clientName}</span>
+                                <div className="flex flex-col md:flex-row justify-end items-start md:items-center gap-4 mb-4">
                                     <div className="flex gap-2 flex-wrap">
                                         <span className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full border border-border">
                                             {study.industry}
