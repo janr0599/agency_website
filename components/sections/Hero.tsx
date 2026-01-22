@@ -6,9 +6,9 @@ import { FadeIn } from "../ui/fade-in";
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto text-center bg-background overflow-hidden">
+        <section className="relative pt-32 pb-20 md:pt-48 md:pb-16 px-6 max-w-7xl mx-auto text-center bg-background overflow-hidden">
             {/* Ripple Background Effect */}
-            <Ripple mainCircleSize={420} mainCircleOpacity={0.15} numCircles={8} />
+            <Ripple mainCircleSize={420} mainCircleOpacity={0.15} numCircles={8} className="mt-[65px]" />
 
             {/* Content */}
             <div className="relative z-10">
@@ -19,8 +19,8 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-medium text-foreground tracking-tighter mb-6 max-w-4xl mx-auto leading-[1.1]">
-                        Automate the process.<br />
-                        <span className="text-accent">Elevate the practice.</span>
+                        Automate the process<br />
+                        <span className="text-accent">Elevate the practice</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-light">
