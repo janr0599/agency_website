@@ -23,7 +23,7 @@ export default function Hero() {
                         <span className="text-accent">Elevate the practice</span>
                     </h1>
 
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                    <p className="text-lg md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-light">
                         We build bespoke automation workflows for boutique law firms. Reclaim billable hours by automating repetitive manual processes that slow your firm down.
                     </p>
 
