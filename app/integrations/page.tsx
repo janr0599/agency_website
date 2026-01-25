@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { Suspense } from "react"
+import { useSearchParams, useRouter, usePathname } from "next/navigation"
 import Navbar from "@/components/ui/Navbar"
 import Footer from "@/components/ui/Footer"
 import { motion } from "framer-motion"
@@ -15,12 +16,30 @@ import Image from "next/image"
 import { integrationCategories, allIntegrations } from "@/lib/integrations-data"
 
 export default function IntegrationsPage() {
-    const [selectedCategory, setSelectedCategory] = useState<string>("common")
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-background flex items-center justify-center">
+                <div className="w-8 h-8 border-4 border-accent border-t-transparent rounded-full animate-spin"></div>
+            </div>
+        }>
+            <IntegrationsContent />
+        </Suspense>
+    )
+}
+
+function IntegrationsContent() {
+    const searchParams = useSearchParams()
+    const router = useRouter()
+    const pathname = usePathname()
+
+    const selectedCategory = searchParams.get("category") || "legal-essentials"
 
     const filteredIntegrations = allIntegrations.filter((integration) => integration.category === selectedCategory)
 
     const handleCategoryClick = (categoryId: string) => {
-        setSelectedCategory(categoryId)
+        const params = new URLSearchParams(searchParams.toString())
+        params.set("category", categoryId)
+        router.push(`${pathname}?${params.toString()}`, { scroll: false })
     }
 
     return (
@@ -240,6 +259,7 @@ export default function IntegrationsPage() {
                     </motion.div>
                 </section>
             </main>
+            <Footer />
         </>
     )
 }

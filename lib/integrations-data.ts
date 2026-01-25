@@ -1,12 +1,12 @@
 export const integrationCategories = [
-    { name: "Legal Essentials", id: "common", label: "Legal Essentials" },
+    { name: "Legal Essentials", id: "legal-essentials", label: "Legal Essentials" },
     { name: "CRM & Sales", id: "crm", label: "CRM & Sales" },
     { name: "Communication", id: "communication", label: "Communication" },
     { name: "Document Storage", id: "documents", label: "Document Storage" },
     { name: "Productivity", id: "productivity", label: "Productivity" },
-    { name: "Finance & Accounting", id: "finance", label: "Finance & Accounting" },
-    { name: "APIs & Webhooks", id: "apis", label: "APIs & Webhooks" },
+    { name: "Finance & Marketing", id: "finance", label: "Finance & Marketing" },
     { name: "AI & ML", id: "ai", label: "AI & ML" },
+    { name: "APIs & Webhooks", id: "apis", label: "APIs & Webhooks" },
 ]
 
 export const allIntegrations = [
@@ -15,7 +15,7 @@ export const allIntegrations = [
         name: "Clio",
         description:
             "Connect your practice management system to build automated workflows around case data and client records.",
-        category: "common",
+        category: "legal-essentials",
         categoryLabel: "Legal Practice",
         color: "bg-blue-50 text-blue-600",
         logo: "/Vector.svg",
@@ -24,15 +24,15 @@ export const allIntegrations = [
         name: "Google Workspace",
         description:
             "Sync Google Drive, Gmail, and Calendar with your automated workflows for seamless document and email handling.",
-        category: "common",
+        category: "legal-essentials",
         categoryLabel: "Productivity",
         color: "bg-red-50 text-red-600",
-        logo: "/google-drive.svg",
+        logo: "/google-workspace-integration.svg",
     },
     {
         name: "Slack",
         description: "Receive automated notifications, alerts, and case updates directly in your team Slack channels.",
-        category: "common",
+        category: "legal-essentials",
         categoryLabel: "Communication",
         color: "bg-emerald-50 text-emerald-600",
         logo: "/slack-integration.svg",
@@ -40,15 +40,15 @@ export const allIntegrations = [
     {
         name: "Microsoft 365",
         description: "Integrate Outlook, Teams, and OneDrive for seamless email and document automation.",
-        category: "common",
+        category: "legal-essentials",
         categoryLabel: "Productivity",
         color: "bg-sky-50 text-sky-600",
-        logo: "/microsoft-outlook.svg",
+        logo: "/microsoft-365-integration.svg",
     },
     {
         name: "Notion",
         description: "Automate data flow between your Notion databases and case management systems.",
-        category: "common",
+        category: "legal-essentials",
         categoryLabel: "Productivity",
         color: "bg-slate-50 text-slate-600",
         logo: "/notion.svg",
@@ -56,19 +56,19 @@ export const allIntegrations = [
     {
         name: "HTTP / REST APIs",
         description: "Build custom integrations with any software that exposes a REST API.",
-        category: "common",
+        category: "legal-essentials",
         categoryLabel: "Developer Tools",
         color: "bg-cyan-50 text-cyan-600",
     },
 
     // CRM & Sales
     {
-        name: "Clio",
-        description: "Advanced case management and client relationship tracking.",
+        name: "Airtable",
+        description: "Flexible database for custom client tracking and matter management.",
         category: "crm",
-        categoryLabel: "Legal Practice",
-        color: "bg-blue-50 text-blue-600",
-        logo: "/Vector.svg",
+        categoryLabel: "Databases",
+        color: "bg-red-50 text-red-600",
+        logo: "/airtable.svg",
     },
     {
         name: "Salesforce",
@@ -87,20 +87,20 @@ export const allIntegrations = [
         logo: "/hubspot-integration.svg",
     },
     {
-        name: "Airtable",
-        description: "Flexible database for custom client tracking and matter management.",
-        category: "crm",
-        categoryLabel: "Databases",
-        color: "bg-red-50 text-red-600",
-        logo: "/airtable.svg",
-    },
-    {
         name: "Pipedrive",
         description: "Sales-focused CRM with powerful automation and reporting capabilities.",
         category: "crm",
         categoryLabel: "CRM",
         color: "bg-green-50 text-green-600",
         logo: "/pipedrive-integration.svg",
+    },
+    {
+        name: "Clio",
+        description: "Advanced case management and client relationship tracking.",
+        category: "crm",
+        categoryLabel: "Legal Practice",
+        color: "bg-blue-50 text-blue-600",
+        logo: "/Vector.svg",
     },
     {
         name: "LawLion",
@@ -128,12 +128,12 @@ export const allIntegrations = [
         logo: "/teams-integration.svg",
     },
     {
-        name: "Gmail / Google Mail",
+        name: "Gmail",
         description: "Automated email workflows with filtering and labeling.",
         category: "communication",
         categoryLabel: "Email",
         color: "bg-red-50 text-red-600",
-        logo: "/google-drive.svg",
+        logo: "/gmail-integration.svg",
     },
     {
         name: "Outlook / Exchange",
@@ -159,7 +159,7 @@ export const allIntegrations = [
         color: "bg-blue-50 text-blue-600",
     },
 
-    // Document Storage
+    // Storage
     {
         name: "Google Drive",
         description: "Cloud storage with integrated Google Workspace file management.",
@@ -185,25 +185,20 @@ export const allIntegrations = [
         logo: "/dropbox-integration.svg",
     },
     {
-        name: "Box",
-        description: "Enterprise-grade document management with advanced security.",
+        name: "Postgres",
+        description: "Open source SQL database for building scalable backends.",
         category: "documents",
-        categoryLabel: "Cloud Storage",
+        categoryLabel: "Databases",
         color: "bg-blue-50 text-blue-600",
+        logo: "/postgresql_integration.svg",
     },
     {
-        name: "AWS S3",
-        description: "Scalable cloud storage for large-scale document management.",
+        name: "Supabase",
+        description: "Open source Firebase alternative for building scalable backends with Postgres.",
         category: "documents",
-        categoryLabel: "Cloud Storage",
+        categoryLabel: "Databases",
         color: "bg-orange-50 text-orange-600",
-    },
-    {
-        name: "iManage",
-        description: "Legal-specific document management and matter management.",
-        category: "documents",
-        categoryLabel: "Legal Practice",
-        color: "bg-slate-50 text-slate-600",
+        logo: "/supabase-integration.svg",
     },
 
     // Productivity
@@ -256,28 +251,14 @@ export const allIntegrations = [
         logo: "/google-drive.svg",
     },
 
-    // Finance & Accounting
-    {
-        name: "QuickBooks",
-        description: "Accounting software integration for invoicing and financial tracking.",
-        category: "finance",
-        categoryLabel: "Accounting",
-        color: "bg-green-50 text-green-600",
-        logo: "/quickbooks-integration.svg",
-    },
+    // Finance & Marketing
     {
         name: "FreshBooks",
         description: "Cloud accounting for small businesses with invoice automation.",
         category: "finance",
         categoryLabel: "Accounting",
         color: "bg-orange-50 text-orange-600",
-    },
-    {
-        name: "Xero",
-        description: "Online accounting software for small business finance management.",
-        category: "finance",
-        categoryLabel: "Accounting",
-        color: "bg-blue-50 text-blue-600",
+        logo: "/freshbooks-integration.svg",
     },
     {
         name: "Stripe",
@@ -288,63 +269,28 @@ export const allIntegrations = [
         logo: "/stripe-integration.svg",
     },
     {
-        name: "PayPal",
-        description: "Payment processing and invoicing.",
+        name: "WordPress",
+        description: "Power your firm's website and blog with automated content publishing and lead capture.",
         category: "finance",
-        categoryLabel: "Payments",
-        color: "bg-sky-50 text-sky-600",
+        categoryLabel: "Marketing",
+        color: "bg-blue-50 text-blue-600",
+        logo: "/wordpress-integration.svg",
     },
     {
-        name: "Wave",
-        description: "Free accounting software with invoice and expense tracking.",
+        name: "Kit",
+        description: "Automate your email marketing and creator commerce with powerful sequences and subscriber management.",
         category: "finance",
-        categoryLabel: "Accounting",
-        color: "bg-indigo-50 text-indigo-600",
-    },
-
-    // APIs & Webhooks
-    {
-        name: "HTTP / REST APIs",
-        description: "Direct API integration for any custom endpoint.",
-        category: "apis",
-        categoryLabel: "Developer Tools",
-        color: "bg-cyan-50 text-cyan-600",
+        categoryLabel: "Marketing",
+        color: "bg-blue-50 text-blue-600",
+        logo: "/kit-integration.svg",
     },
     {
-        name: "Zapier",
-        description: "Pre-built integration platform with 5000+ apps.",
-        category: "apis",
-        categoryLabel: "Integration Platforms",
+        name: "Mailchimp",
+        description: "Connect your marketing platform for automated lead nurturing and email campaigns.",
+        category: "finance",
+        categoryLabel: "Marketing",
         color: "bg-orange-50 text-orange-600",
-    },
-    {
-        name: "Make (formerly Integromat)",
-        description: "Visual workflow automation with extensive integrations.",
-        category: "apis",
-        categoryLabel: "Integration Platforms",
-        color: "bg-purple-50 text-purple-600",
-    },
-    {
-        name: "n8n",
-        description: "Open-source workflow automation and integration platform.",
-        category: "apis",
-        categoryLabel: "Integration Platforms",
-        color: "bg-red-50 text-red-600",
-        logo: "/n8n.svg",
-    },
-    {
-        name: "Postman",
-        description: "API development and testing platform.",
-        category: "apis",
-        categoryLabel: "Developer Tools",
-        color: "bg-orange-50 text-orange-600",
-    },
-    {
-        name: "GraphQL APIs",
-        description: "Modern API standard for flexible data querying.",
-        category: "apis",
-        categoryLabel: "Developer Tools",
-        color: "bg-pink-50 text-pink-600",
+        logo: "/mailchimp-integration.svg",
     },
 
     // AI & ML
@@ -362,14 +308,15 @@ export const allIntegrations = [
         category: "ai",
         categoryLabel: "AI",
         color: "bg-blue-50 text-blue-600",
-        logo: "/google-drive.svg",
+        logo: "/gemini-integration.svg",
     },
     {
         name: "Anthropic Claude",
         description: "Constitutional AI for nuanced legal analysis and research.",
         category: "ai",
         categoryLabel: "AI",
-        color: "bg-slate-50 text-slate-600",
+        // color: "bg-slate-50 text-slate-600",
+        logo: "/claude-integration.svg",
     },
     {
         name: "Hugging Face",
@@ -377,20 +324,32 @@ export const allIntegrations = [
         category: "ai",
         categoryLabel: "ML",
         color: "bg-yellow-50 text-yellow-600",
+        logo: "/huggingface-integration.svg",
     },
     {
-        name: "Microsoft Copilot",
+        name: "OpenRouter",
         description: "AI assistant integrated with Microsoft 365 applications.",
         category: "ai",
         categoryLabel: "AI",
         color: "bg-sky-50 text-sky-600",
-        logo: "/microsoft-outlook.svg",
+        logo: "/openrouter-integration.svg",
+    },
+
+    // APIs & Webhooks
+    {
+        name: "HTTP / REST APIs",
+        description: "Direct API integration for any custom endpoint.",
+        category: "apis",
+        categoryLabel: "Developer Tools",
+        color: "bg-cyan-50 text-cyan-600",
+        logo: "/http-integration.svg",
     },
     {
-        name: "LexisNexis AI",
-        description: "Legal-specific AI for research and case analysis.",
-        category: "ai",
-        categoryLabel: "Legal Practice",
-        color: "bg-blue-50 text-blue-600",
+        name: "Webhooks",
+        description: "Custom event notifications for automated workflows.",
+        category: "apis",
+        categoryLabel: "Developer Tools",
+        color: "bg-cyan-50 text-cyan-600",
+        logo: "/webhook-integration.svg",
     },
 ]

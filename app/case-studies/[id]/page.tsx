@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { ArrowLeft, Check, Users, FileText, Scale, Zap, AlertCircle, BarChart3, MessageSquareQuote } from "lucide-react";
+import { ArrowLeft, Check, Users, FileText, Scale, Zap, AlertCircle, BarChart3, MessageSquareQuote, Heart } from "lucide-react";
 import { notFound } from "next/navigation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { successCases } from "@/lib/successCases";
@@ -11,11 +11,12 @@ import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { FadeIn } from "@/components/ui/fade-in";
 
-// Icon mapping based on industry
+// Icon mapping based on automation category
 const getIndustryIcon = (industry: string) => {
-    if (industry.includes("Family")) return Users;
-    if (industry.includes("Estate")) return FileText;
-    if (industry.includes("Litigation")) return Scale;
+    if (industry.includes("Intake")) return Users;
+    if (industry.includes("Marketing")) return Zap;
+    if (industry.includes("Billing")) return Scale;
+    if (industry.includes("Retention")) return Heart;
     return Zap;
 };
 

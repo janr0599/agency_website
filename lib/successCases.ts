@@ -18,75 +18,83 @@ export interface CaseStudy {
 
 export const successCases: CaseStudy[] = [
     {
-        id: "family-law-automation",
-        clientName: "Family Law Boutique",
-        title: "End-to-End Intake Automation with n8n",
-        industry: "Family Law",
+        id: "ai-whatsapp-intake",
+        clientName: "Boutique Law Firm",
+        title: "AI-Powered WhatsApp Intake & Qualification Bot",
+        industry: "Intake",
         challenge:
-            "The firm was overwhelmed by manual lead qualification and data entry. Paralegals spent over 15 hours a week manually transferring data from web forms to Clio Manage, leading to data entry errors and delayed client engagement.",
+            "Managing a high volume of leads from social media ads was overwhelming the manual intake team. Response times were lagging, and many inquiries were unqualified, wasting valuable attorney time on non-viable cases.",
         solution:
-            "We architected a comprehensive n8n workflow to handle the entire intake lifecycle. Now, when a lead submits a form, n8n automatically performs a conflict check, creates a new contact and matter in Clio, generates a custom engagement letter via DocuSign, and notifies the assigned attorney via Slack—all in under 30 seconds.",
+            "We deployed a sophisticated n8n-powered WhatsApp chatbot using the official Business API. Featuring persistent memory and human-like interaction, the bot qualifies leads in real-time. Successful leads are automatically synced to Airtable, an intake email is dispatched, and consultations are scheduled via Outlook and Calendly integration. The system seamlessly escalates complex queries to the human team when necessary.",
         results: [
-            "90% reduction in manual data entry",
-            "Instant engagement letter generation",
-            "Zero data transfer errors",
-            "15+ hours of paralegal time saved weekly"
+            "100% instant response rate for all ad leads",
+            "Zero manual hours spent on initial qualification",
+            "50% increase in scheduled intake appointments",
+            "Seamless human escalation for high-value inquiries"
         ],
-        testimonial:
-            "The n8n workflow PraxisFlow built didn't just save us time; it completely professionalized our client onboarding. We're converting leads faster than ever because we're the first to respond with a contract.",
-        testimonialAuthor: "Managing Partner",
-        testimonialRole: "Family Law Boutique",
-        software: ["n8n", "Clio Manage", "DocuSign", "Slack", "Typeform"],
-        timeline: "4 weeks implementation",
-        keyResult: "15+ Hours Saved Weekly"
+        software: ["n8n", "WhatsApp Business API", "Airtable", "Outlook", "Calendly"],
+        timeline: "4 weeks development",
+        keyResult: "Instant 24/7 Lead Qualification"
     },
     {
-        id: "estate-planning-engine",
-        clientName: "Estate Planning Practice",
-        title: "AI-Powered Document Drafting Engine",
-        industry: "Estate Planning",
+        id: "marketing-command-center",
+        clientName: "Professional Services Client",
+        title: "Multi-Platform Social Media Automation Hub",
+        industry: "Marketing",
         challenge:
-            "Drafting complex estate plans was a major bottleneck. Attorneys were spending hours copy-pasting clauses and manually formatting documents, which limited the firm's capacity to take on new clients.",
+            "Maintaining a consistent social media presence across multiple platforms was a fragmented, time-consuming process. The firm lacked a centralized system for scheduling posts and tracking engagement metrics effectively.",
         solution:
-            "We built a custom document generation engine using n8n and OpenAI. The system parses client intake questionnaires, structures the data, and uses an LLM to draft personalized estate documents. n8n then compiles these into a formatted PDF, saves it to SharePoint, and drafts a review email for the attorney.",
+            "We developed a 'Marketing Command Center' leveraging Airtable and n8n. The team simply populates an Airtable record with copy, media (carousels, images, or videos), and scheduled times. n8n automatically handles the cross-platform distribution. Post-publication, a secondary workflow retrieves engagement metrics and populates an automated dashboard for performance monitoring.",
         results: [
-            "Drafting time reduced from 4 hours to 5 minutes",
-            "100% consistency in clause usage",
-            "Doubled monthly client capacity",
-            "Seamless integration with SharePoint"
+            "Centralized management for 5+ social platforms",
+            "80% reduction in time spent on manual posting",
+            "Automated performance tracking and ROI analysis",
+            "Consistent brand presence with zero-effort scheduling"
         ],
-        testimonial:
-            "I was skeptical about AI, but this system is a game-changer. It does the heavy lifting of drafting, allowing me to focus on the legal strategy and client relationship.",
-        testimonialAuthor: "Senior Associate",
-        testimonialRole: "Estate Planning Firm",
-        software: ["n8n", "OpenAI API", "SharePoint", "Outlook"],
-        timeline: "6 weeks implementation",
-        keyResult: "98% Faster Drafting"
+        software: ["n8n", "Airtable", "Instagram API", "LinkedIn API", "Facebook Graph API"],
+        timeline: "3 weeks development",
+        keyResult: "80% Faster Content Deployment"
     },
     {
-        id: "civil-litigation-comms",
-        clientName: "Civil Litigation Firm",
-        title: "Automated Client Communication Loop",
-        industry: "Civil Litigation",
+        id: "billing-revenue-automation",
+        clientName: "Legal Services Client",
+        title: "Zero-Touch Payment & Revenue Tracking System",
+        industry: "Billing & Invoicing",
         challenge:
-            "The firm was plagued by constant inbound calls from clients asking for status updates. Additionally, they were missing opportunities to collect reviews and referrals after successful case closures.",
+            "Manual reconciliation of payments received via practice management tools was error-prone and delayed financial reporting. Tracking revenue by case type and date required hours of manual spreadsheet updates every month.",
         solution:
-            "We implemented a 'Client Pulse' system using n8n. Whenever a case status changes in their CRM, n8n triggers a personalized SMS and email update to the client via Twilio and SendGrid. Upon case closure, a separate workflow automatically requests feedback and guides happy clients to leave a Google review.",
+            "We architected an automated billing bridge between DocketWise, n8n, and Airtable. The moment a payment confirmation is detected, the workflow identifies the client, links the payment to their record, and categorizes revenue by case type and date. This creates a real-time financial overview of the firm's health without any manual data entry.",
         results: [
-            "60% reduction in inbound status calls",
-            "4.8/5 star average rating (up from 3.5)",
-            "30% increase in referral business",
-            "Improved client satisfaction scores"
+            "Real-time, autonomous payment reconciliation",
+            "Zero manual data entry for billing records",
+            "Instant visibility into revenue by practice area/date",
+            "Eliminated human error in financial tracking"
         ],
-        testimonial:
-            "Our clients feel more informed and cared for, and our staff isn't tied up on the phone answering the same questions all day. The automated review requests have also significantly boosted our online reputation.",
-        testimonialAuthor: "Operations Director",
-        testimonialRole: "Civil Litigation Firm",
-        software: ["n8n", "Twilio", "SendGrid", "Salesforce"],
-        timeline: "3 weeks implementation",
-        keyResult: "60% Fewer Inbound Calls"
+        software: ["n8n", "DocketWise", "Airtable", "Webhooks"],
+        timeline: "2 weeks development",
+        keyResult: "100% Automated Reconciliation"
+    },
+    {
+        id: "lead-nurture-engine",
+        clientName: "High-Growth Firm",
+        title: "Automated Lead Nurture & Conversion Sequence",
+        industry: "Marketing",
+        challenge:
+            "Leads who expressed interest but didn't immediate book a strategy session were often falling through the cracks. Manual follow-up was inconsistent, and simple plain-text emails failed to maintain the professional authority needed to close.",
+        solution:
+            "We implemented a sophisticated email follow-up engine. Leads who haven't scheduled a strategy session are automatically entered into a tailored sequence. The system uses high-end, styled HTML templates addressing practice-specific pain points. These 'authority-building' touches keep the firm top-of-mind and increase conversion rates without any staff intervention.",
+        results: [
+            "40% increase in lead-to-consultation conversion",
+            "Consistent, high-authority brand communication",
+            "Dynamic logic based on lead interest type",
+            "Significant reduction in manual sales follow-ups"
+        ],
+        software: ["n8n", "Airtable", "SMTP", "HTML/CSS Branding"],
+        timeline: "3 weeks development",
+        keyResult: "40% Higher Conversion Rate"
     },
 ];
+
 
 export async function getSuccessCaseData(id: string): Promise<CaseStudy | undefined> {
     // Simulate API delay
