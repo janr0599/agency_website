@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             // 1. svg for modern browsers
-            { url: "/logo.svg", type: "image/svg+xml" },
+            { url: "/isotipo-base.svg", type: "image/svg+xml" },
 
             // 2. Google search results
             { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },

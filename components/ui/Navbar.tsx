@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/">
-                    <Image src="/logo-text.svg" alt="PraxisFlow Logo" width={128} height={128} className="h-8 w-auto" />
+                    <Image src="/PraxisFlow-Logotipo-Base.svg" alt="PraxisFlow Logo" width={128} height={128} className="h-8 w-auto" />
                 </Link>
 
                 {/* Desktop Navigation */}

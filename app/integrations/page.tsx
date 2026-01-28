@@ -259,7 +259,6 @@ function IntegrationsContent() {
                     </motion.div>
                 </section>
             </main>
-            <Footer />
         </>
     )
 }

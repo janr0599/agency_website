@@ -11,7 +11,7 @@ export default function Footer() {
                         <div className="col-span-2">
                             <div className="mb-6">
                                 <a href="/" className="inline-block">
-                                    <Image src="/logo-text.svg" alt="PraxisFlow Logo" width={98} height={98} className="rounded" />
+                                    <Image src="/PraxisFlow-Logotipo-Base.svg" alt="PraxisFlow Logo" width={100} height={100} className="rounded" />
                                 </a>
                             </div>
                             <p className="text-sm text-muted-foreground max-w-xs mb-6">Automating the legal industry, one workflow at a time. Secure, efficient, and tailored for growth.</p>
