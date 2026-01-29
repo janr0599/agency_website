@@ -73,8 +73,8 @@ function IntegrationsContent() {
                             </div>
 
                             <h1 className="text-4xl md:text-6xl font-medium text-foreground tracking-tight mb-6">
-                                Connect any tool. <br className="hidden md:block" />
-                                <span className="text-accent">Automate everything.</span>
+                                Connect any tool<br className="hidden md:block" />
+                                <span className="text-accent">Automate everything</span>
                             </h1>
 
                             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-10">
