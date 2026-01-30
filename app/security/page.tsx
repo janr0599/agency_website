@@ -92,7 +92,7 @@ export default function SecurityPage() {
                                             <Lock className="w-6 h-6" />
                                         </div>
                                         <h3 className="text-xl font-semibold text-foreground mb-3">Dedicated Infrastructure</h3>
-                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                        <p className="text-muted-foreground leading-relaxed">
                                             Private, dedicated server environment ensuring your data is isolated from other clients and public internet traffic.
                                         </p>
                                     </div>
@@ -104,7 +104,7 @@ export default function SecurityPage() {
                                             <Shield className="w-6 h-6" />
                                         </div>
                                         <h3 className="text-xl font-semibold text-foreground mb-3">Robust Encryption</h3>
-                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                        <p className="text-muted-foreground leading-relaxed">
                                             Industry-standard encryption safeguarding data at rest and in transit, including workflow credentials.
                                         </p>
                                     </div>
@@ -116,7 +116,7 @@ export default function SecurityPage() {
                                             <Eye className="w-6 h-6" />
                                         </div>
                                         <h3 className="text-xl font-semibold text-foreground mb-3">Strict Access Control</h3>
-                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                        <p className="text-muted-foreground leading-relaxed">
                                             Access restricted using cryptographic keys and Multi-Factor Authentication (MFA) for all critical accounts.
                                         </p>
                                     </div>
@@ -128,7 +128,7 @@ export default function SecurityPage() {
                                             <ShieldCheck className="w-6 h-6" />
                                         </div>
                                         <h3 className="text-xl font-semibold text-foreground mb-3">Multi-layered Encrypted Backups</h3>
-                                        <p className="text-muted-foreground leading-relaxed line-clamp-2">
+                                        <p className="text-muted-foreground leading-relaxed">
                                             Critical system data is encrypted and securely archived daily to an off-site storage vault for continuity.
                                         </p>
                                     </div>
