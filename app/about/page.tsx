@@ -37,10 +37,10 @@ export default function AboutPage() {
                             About Us
                         </div>
                         <h1 className="text-4xl md:text-6xl font-medium text-foreground tracking-tight mb-6">
-                            Engineering the Future of <span className="text-accent">Legal Operations</span>
+                            Engineering the Future of <br /> <span className="text-accent">Legal Operations</span>
                         </h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                            We are engineers and legal operations experts dedicated to modernizing the practice of law through intelligent automation.
+                            Combining technical engineering with firsthand legal expertise, we bridge the gap between technology and law to modernize legal operations through intelligent automation.
                         </p>
                     </FadeIn>
                 </div>

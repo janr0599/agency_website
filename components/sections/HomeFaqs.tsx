@@ -21,12 +21,12 @@ export function FAQsHomepage() {
         {
             question: "How do you handle sensitive client data and security?",
             answer:
-                "Security is foundational. Your n8n instance runs in your own infrastructure with no data passing through our servers. We implement end-to-end encryption for sensitive data, maintain detailed audit logs for compliance, and follow legal industry standards. All API credentials are stored securely in encrypted vaults, and we conduct quarterly security reviews.",
+                "Security is foundational. We build your automations using n8n, which allows us to provide a service unrestricted by the heavy over-usage charges typically imposed by platforms like Zapier or Make. Instead of your data sitting on a third-party cloud, your n8n instance runs within a dedicated, private environment. This ensures your sensitive business information stays within your control. Never shared, never co-mingled, and with no data passing through our servers. We implement end-to-end encryption for sensitive data, maintain detailed audit logs for compliance, and follow legal industry standards. All API credentials are stored securely in encrypted vaults, and we conduct quarterly security reviews.",
         },
         {
             question: "What if we need to change or scale workflows later?",
             answer:
-                "That's built into our ongoing partnership. We don't hand off and disappear—we work with you continuously. As your firm grows, we review workflows, identify bottlenecks, and suggest improvements. Any modifications and scaling are handled seamlessly through quarterly optimization reviews.",
+                "Our monthly partnership covers continuous monitoring, maintenance, and minor adjustments to ensure your existing workflows run smoothly. While we provide strategic guidance during our quarterly reviews, major overhauls or entirely new automation projects are scoped separately. This ensures your core systems stay reliable while providing a clear path for significant scaling and new development.",
         },
     ]
 

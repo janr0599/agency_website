@@ -127,7 +127,7 @@ export default function SecurityPage() {
                                         <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6 text-accent">
                                             <ShieldCheck className="w-6 h-6" />
                                         </div>
-                                        <h3 className="text-xl font-semibold text-foreground mb-3">Redundant Backups</h3>
+                                        <h3 className="text-xl font-semibold text-foreground mb-3">Multi-layered Encrypted Backups</h3>
                                         <p className="text-muted-foreground leading-relaxed line-clamp-2">
                                             Critical system data is encrypted and securely archived daily to an off-site storage vault for continuity.
                                         </p>
@@ -185,7 +185,7 @@ export default function SecurityPage() {
                                     <ul className="space-y-4">
                                         {[
                                             <span><strong>Redundant Backups:</strong> Critical system data and workflow configurations are encrypted on our server and then securely archived daily to an off-site storage vault.</span>,
-                                            <span><strong>Confidentiality by Design:</strong> Our workflows are designed following the principle of data minimization—we only process and store the necessary data required to execute your legal tasks, limiting exposure.</span>
+                                            <span><strong>Least Privilege Access:</strong> We configure integrations to require only the minimum permissions and authorizations necessary for your workflows to run, ensuring only the necessary access to your platforms.</span>
                                         ].map((item, i) => (
                                             <li key={i} className="flex gap-3 items-start">
                                                 <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />

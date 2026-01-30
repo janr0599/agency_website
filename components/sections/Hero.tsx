@@ -19,12 +19,12 @@ export default function Hero() {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-medium text-foreground tracking-tighter mb-6 max-w-4xl mx-auto leading-[1.1]">
-                        Automate the process<br />
-                        <span className="text-accent">Elevate the practice</span>
+                        Automate the process.<br />
+                        <span className="text-accent">Elevate the practice.</span>
                     </h1>
 
                     <p className="text-lg md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-                        We build bespoke automation workflows for boutique law firms. Reclaim billable hours by automating repetitive manual processes that slow your firm down.
+                        We build bespoke automation workflows for boutique law firms. Reclaim valuable time by automating processes critical to law firm revenue generation.
                     </p>
 
                 </FadeIn>

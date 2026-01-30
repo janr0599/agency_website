@@ -72,7 +72,7 @@ export default function CaseStudiesPage() {
                             Success Stories
                         </h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                            Real results for forward-thinking boutique firms.
+                            See examples of automation we have built for forward-thinking boutique law firms.
                         </p>
                     </FadeIn>
                 </div>

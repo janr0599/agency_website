@@ -25,7 +25,7 @@ export default function Process() {
                     <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 text-white">Our End-to-End Process</h2>
                     <p className="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
                         We build and maintain custom automation workflows for your firm. From discovery to deployment and ongoing
-                        support, we handle the entire infrastructure so you can focus on practicing law.
+                        support, we handle the entire infrastructure so you can focus on practicing law and generating cashflow.
                     </p>
                 </motion.div>
 

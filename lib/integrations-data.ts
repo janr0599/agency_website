@@ -144,12 +144,12 @@ export const allIntegrations = [
         logo: "/microsoft-outlook.svg",
     },
     {
-        name: "Twilio",
-        description: "SMS and voice automation for client communications.",
+        name: "WhatsApp",
+        description: "Connect with clients on their preferred platform with automated WhatsApp notifications and messaging.",
         category: "communication",
-        categoryLabel: "SMS/Voice",
+        categoryLabel: "Communication",
         color: "bg-red-50 text-red-600",
-        logo: "/twilio-integration.svg",
+        logo: "/whatsapp-integration.svg",
     },
     {
         name: "SendGrid",

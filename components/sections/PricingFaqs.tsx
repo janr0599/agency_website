@@ -11,7 +11,7 @@ export function FAQs() {
         {
             question: "What is included in the 'Ongoing Partnership' fee?",
             answer:
-                "Your monthly investment includes dedicated account management, priority support (Slack, email, phone), quarterly optimization reviews, workflow adjustments and enhancements, infrastructure monitoring, and scaling support. You're not paying for a platform—you're investing in a true partner committed to your long-term success.",
+                "If you prefer, we offer a monthly ongoing partnership, which includes dedicated account management, priority support (Slack, email, phone), quarterly optimization reviews, workflow adjustments and enhancements, infrastructure monitoring, and scaling support. You're not paying for a platform—you're investing in a true partner committed to your long-term success.",
         },
         {
             question: "Do you offer performance-based or ROI guarantees?",
@@ -33,10 +33,16 @@ export function FAQs() {
             answer:
                 "Changes are handled through change requests during implementation, or folded into the ongoing partnership phase. For minor adjustments, they're typically included in your monthly fee. Significant new integrations are scoped separately and can be added to the partnership, ensuring predictability and flexibility.",
         },
+
         {
-            question: "What if we integrate with a tool that n8n doesn't support?",
+            question: "Why do you use n8n instead of platforms like Zapier or Make?",
             answer:
-                "n8n supports 1,000+ integrations and has powerful HTTP request capabilities that work with any tool with an API. If a tool isn't directly supported, we can build a custom integration using HTTP requests or webhooks. During discovery, we map your entire tech stack and identify any custom integration needs upfront.",
+                "We choose n8n for its superior flexibility, data privacy, and cost-efficiency. Unlike Zapier or Make, n8n allows for self-hosting—ensuring sensitive client data stays within your controlled environment. It also handles complex logic more effectively and doesn't charge per-task, meaning your costs don't skyrocket as your firm's automation volume grows.",
+        },
+        {
+            question: "What if our tech stack has tools that n8n does not support?",
+            answer:
+                "n8n supports 1,000+ integrations and has powerful HTTP request capabilities that work with any tool with an API. If a tool isn't directly supported, we can build a custom integration using HTTP requests or webhooks. During our complimentary discovery meeting, we map your entire tech stack and identify any custom integration needs upfront.",
         },
     ]
 

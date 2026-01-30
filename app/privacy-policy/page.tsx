@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
                             <section className="mb-12">
                                 <h2 className="text-2xl font-medium text-foreground mb-4">1. Introduction</h2>
                                 <p className="text-muted-foreground leading-relaxed mb-4">
-                                    Welcome to PraxisFlow. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.
+                                    Welcome to PraxisFlow. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website and inform you of your privacy rights and how the law protects you.
                                 </p>
                             </section>
 

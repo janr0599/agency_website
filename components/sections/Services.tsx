@@ -199,8 +199,8 @@ const services = [
         className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-orange-500/50",
     },
     {
-        name: "Intake",
-        description: "Instant conflict checks, automated qualification, and one-click retainer generation.",
+        name: "Intake & Sales",
+        description: "AI-based receptionist and automated data collection, appointment setting, and one-click retainer generation.",
         Icon: IntakeIcon,
         href: "/contact",
         cta: "Learn more",
@@ -258,7 +258,7 @@ export default function Services() {
                         Engineering Efficieny for Legal Minds.
                     </h2>
                     <p className="text-muted-foreground max-w-xl text-lg">
-                        Eliminate the bottlenecks that slow down revenue. We help you build a fancy-looking machine that solves your pain points.
+                        Eliminate the bottlenecks that slow down revenue. We help you engineer a virtual machine that works beyond human capacity limitations, 24/7, 365 days a year.
                     </p>
                 </div>
 
