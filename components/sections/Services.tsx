@@ -255,7 +255,7 @@ export default function Services() {
             <FadeIn margin="-200px">
                 <div className="mb-16 md:mb-24">
                     <h2 className="text-3xl md:text-4xl font-medium text-foreground tracking-tight mb-4">
-                        Engineering Efficieny for Legal Minds.
+                        Engineering Efficiency for Legal Minds.
                     </h2>
                     <p className="text-muted-foreground max-w-xl text-lg">
                         Eliminate the bottlenecks that slow down revenue. We help you engineer a virtual machine that works beyond human capacity limitations, 24/7, 365 days a year.

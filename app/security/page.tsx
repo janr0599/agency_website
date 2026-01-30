@@ -184,7 +184,7 @@ export default function SecurityPage() {
                                     </p>
                                     <ul className="space-y-4">
                                         {[
-                                            <span><strong>Redundant Backups:</strong> Critical system data and workflow configurations are encrypted on our server and then securely archived daily to an off-site storage vault.</span>,
+                                            <span><strong>Multi-Layered Backups:</strong> Critical system data and workflow configurations are encrypted on our server and then securely archived daily to an off-site storage vault.</span>,
                                             <span><strong>Least Privilege Access:</strong> We configure integrations to require only the minimum permissions and authorizations necessary for your workflows to run, ensuring only the necessary access to your platforms.</span>
                                         ].map((item, i) => (
                                             <li key={i} className="flex gap-3 items-start">
