@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { FadeIn } from "@/components/ui/fade-in"
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode
@@ -17,6 +18,7 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   description: string
   href: string
   cta: string
+  delay?: number
 }
 
 const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
@@ -41,28 +43,30 @@ const BentoCard = ({
   description,
   href,
   cta,
+  delay = 0,
   ...props
 }: BentoCardProps) => (
-  <div
-    key={name}
-    className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-2xl",
-      "border border-border bg-card transition-colors hover:border-accent",
-      className
-    )}
-    {...props}
-  >
-    <div>{background}</div>
-    <div className="p-4">
-      <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 transition-all duration-300">
-        <Icon className="h-12 w-12 origin-left transform-gpu text-primary ease-in-out" />
-        <h3 className="text-base lg:text-xl font-semibold text-primary dark:text-neutral-300">
-          {name}
-        </h3>
-        <p className="max-w-lg text-muted-foreground text-sm lg:text-base">{description}</p>
-      </div>
+  <FadeIn delay={delay} className={cn("col-span-3", className)}>
+    <div
+      key={name}
+      className={cn(
+        "group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl",
+        "border border-border bg-card transition-all duration-300",
+        className
+      )}
+      {...props}
+    >
+      <div>{background}</div>
+      <div className="p-4">
+        <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 transition-all duration-300">
+          <Icon className="h-12 w-12 origin-left transform-gpu text-primary ease-in-out" />
+          <h3 className="text-base lg:text-xl font-semibold text-primary dark:text-neutral-300">
+            {name}
+          </h3>
+          <p className="max-w-lg text-muted-foreground text-sm lg:text-base">{description}</p>
+        </div>
 
-      {/* <div
+        {/* <div
         className={cn(
           "pointer-events-none flex w-full translate-y-0 transform-gpu flex-row items-center transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 lg:hidden"
         )}
@@ -79,9 +83,9 @@ const BentoCard = ({
           </a>
         </Button>
       </div> */}
-    </div>
+      </div>
 
-    {/* <div
+      {/* <div
       className={cn(
         "pointer-events-none absolute bottom-0 hidden w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 lg:flex"
       )}
@@ -99,8 +103,9 @@ const BentoCard = ({
       </Button>
     </div> */}
 
-    {/* <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" /> */}
-  </div>
+      {/* <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" /> */}
+    </div>
+  </FadeIn>
 )
 
 export { BentoCard, BentoGrid }

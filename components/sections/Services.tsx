@@ -263,13 +263,11 @@ export default function Services() {
                 </div>
 
             </FadeIn>
-            <FadeIn delay={0.2} margin="-100px">
-                <BentoGrid className="grid-cols-1 md:grid-cols-3 auto-rows-[12rem]">
-                    {services.map((service, idx) => (
-                        <BentoCard key={idx} {...service} />
-                    ))}
-                </BentoGrid>
-            </FadeIn>
+            <BentoGrid className="grid-cols-1 md:grid-cols-3 auto-rows-[12rem]">
+                {services.map((service, idx) => (
+                    <BentoCard key={idx} {...service} delay={0.1 + idx * 0.05} />
+                ))}
+            </BentoGrid>
         </section>
     );
 }
