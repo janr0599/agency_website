@@ -29,9 +29,6 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
     });
 
     const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-    const iconColor1 = useTransform(scrollYProgress, [0.1, 0.25], ["hsl(var(--muted-foreground))", "hsl(var(--accent))"]);
-    const iconColor2 = useTransform(scrollYProgress, [0.4, 0.5], ["hsl(var(--muted-foreground))", "hsl(var(--accent))"]);
-    const iconColor3 = useTransform(scrollYProgress, [0.8, 0.9], ["hsl(var(--muted-foreground))", "hsl(var(--accent))"]);
 
     if (!caseStudy) {
         notFound();
@@ -136,7 +133,10 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                         <motion.div variants={itemVariants}>
                             <div className="flex items-start gap-4">
                                 <motion.div
-                                    style={{ color: iconColor1 }}
+                                    initial={{ color: "hsl(var(--muted-foreground))" }}
+                                    whileInView={{ color: "hsl(var(--accent))" }}
+                                    viewport={{ margin: "0px 0px -50% 0px", once: false }}
+                                    transition={{ duration: 0.3 }}
                                     className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-1 relative z-10 border border-border"
                                 >
                                     <AlertCircle className="w-5 h-5" />
@@ -152,7 +152,10 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                         <motion.div variants={itemVariants}>
                             <div className="flex items-start gap-4">
                                 <motion.div
-                                    style={{ color: iconColor2 }}
+                                    initial={{ color: "hsl(var(--muted-foreground))" }}
+                                    whileInView={{ color: "hsl(var(--accent))" }}
+                                    viewport={{ margin: "0px 0px -50% 0px", once: false }}
+                                    transition={{ duration: 0.3 }}
                                     className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-1 relative z-10 border border-border"
                                 >
                                     <Zap className="w-5 h-5" />
@@ -168,7 +171,10 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                         <motion.div variants={itemVariants}>
                             <div className="flex items-start gap-4">
                                 <motion.div
-                                    style={{ color: iconColor3 }}
+                                    initial={{ color: "hsl(var(--muted-foreground))" }}
+                                    whileInView={{ color: "hsl(var(--accent))" }}
+                                    viewport={{ margin: "0px 0px -50% 0px", once: false }}
+                                    transition={{ duration: 0.3 }}
                                     className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-1 relative z-10 border border-border"
                                 >
                                     <BarChart3 className="w-5 h-5" />

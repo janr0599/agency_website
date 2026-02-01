@@ -116,7 +116,7 @@ function IntegrationsContent() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.05 }}
                                     viewport={{ once: true }}
-                                    className={`p-6 rounded-2xl border transition-all duration-300 text-center group cursor-pointer ${isSelected
+                                    className={`p-6 rounded-2xl border transition-shadow transition-colors duration-300 text-center group cursor-pointer ${isSelected
                                         ? "border-teal-500 bg-teal-50 shadow-md"
                                         : "border-slate-200 bg-white hover:border-teal-500/30 hover:shadow-md"
                                         }`}
@@ -137,7 +137,7 @@ function IntegrationsContent() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="group p-6 rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:border-teal-500/30"
+                                className="group p-6 rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow transition-colors duration-300 hover:border-teal-500/30"
                             >
                                 <div className={`w-12 h-12 rounded-lg ${integration.color} flex items-center justify-center mb-4 overflow-hidden`}>
                                     {integration.logo ? (
@@ -166,7 +166,7 @@ function IntegrationsContent() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 5 * 0.1 }}
-                            className="group p-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:border-teal-500/30 flex flex-col justify-between"
+                            className="group p-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100 shadow-sm hover:shadow-md transition-shadow transition-colors duration-300 hover:border-teal-500/30 flex flex-col justify-between"
                         >
                             <div>
                                 <div className="w-12 h-12 rounded-lg bg-slate-200 flex items-center justify-center mb-4">

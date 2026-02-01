@@ -196,7 +196,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-orange-500/50",
+        className: "md:col-span-1 md:row-span-1 hover:border-orange-500/50",
     },
     {
         name: "Intake & Sales",
@@ -205,7 +205,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-violet-500/50",
+        className: "md:col-span-1 md:row-span-1 hover:border-violet-500/50",
     },
     {
         name: "Client Retention",
@@ -214,7 +214,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-blue-500/50",
+        className: "md:col-span-1 md:row-span-1 hover:border-blue-500/50",
     },
     {
         name: "Workflow Integration",
@@ -223,11 +223,11 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: (
-            <div className="absolute top-10 bottom-20 left-10 right-10 transition-all duration-300 ease-out hidden md:block">
+            <div className="absolute top-10 bottom-20 left-10 right-10 hidden md:block">
                 <AnimatedBeamDemo />
             </div>
         ),
-        className: "md:col-span-2 md:row-span-2 transition-all duration-300 ease-out hover:border-teal-500/50",
+        className: "md:col-span-2 md:row-span-2 hover:border-teal-500/50",
     },
     {
         name: "Billing & Invoicing",
@@ -236,7 +236,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-emerald-500/50",
+        className: "md:col-span-1 md:row-span-1 hover:border-emerald-500/50",
     },
     {
         name: "Post Engagement",
@@ -245,7 +245,7 @@ const services = [
         href: "/contact",
         cta: "Learn more",
         background: <div className="absolute inset-0" />,
-        className: "md:col-span-1 md:row-span-1 transition-all duration-300 ease-out hover:border-amber-500/50",
+        className: "md:col-span-1 md:row-span-1 hover:border-amber-500/50",
     },
 ];
 

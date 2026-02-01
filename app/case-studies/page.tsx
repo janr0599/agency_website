@@ -69,7 +69,7 @@ export default function CaseStudiesPage() {
                             Case Studies
                         </div>
                         <h1 className="text-4xl md:text-6xl font-medium text-foreground tracking-tight mb-6">
-                            Success Stories
+                            Real-World <br /> <span className="text-accent">Success Stories</span>
                         </h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                             See examples of automation we have built for forward-thinking boutique law firms.

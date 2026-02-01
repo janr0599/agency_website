@@ -72,7 +72,7 @@ export function FAQs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: index * 0.05 }}
                             viewport={{ once: true }}
-                            className="border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-teal-500/30 transition-all duration-300"
+                            className="border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-teal-500/30 transition-shadow transition-colors duration-300"
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}

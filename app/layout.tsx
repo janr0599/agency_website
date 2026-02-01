@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
 import JsonLd from "../components/seo/JsonLd";
+// import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -83,6 +84,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
+                {/* <ScrollProgress /> */}
                 <JsonLd />
                 <Navbar />
                 <main className="min-h-screen flex flex-col items-center justify-between">

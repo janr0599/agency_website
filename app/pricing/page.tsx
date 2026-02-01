@@ -37,7 +37,7 @@ export default function PricingPage() {
                             Pricing & Investment
                         </div>
                         <h1 className="text-4xl md:text-6xl font-medium text-foreground tracking-tight mb-6">
-                            Transparent, Value-Based Investment
+                            Transparent, <br /> <span className="text-accent">Value-Based Investment</span>
                         </h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                             No hourly billing. No surprises. Just clear ROI and a partnership built on trust.
