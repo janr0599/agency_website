@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/og-image.png",
+                url: "/og-image.webp",
                 width: 1200,
                 height: 630,
                 alt: "PraxisFlow Security Standards",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Security & Compliance | PraxisFlow",
         description: "Your legal workflows and sensitive data are protected through dedicated infrastructure and layered safeguards.",
-        images: ["/og-image.png"],
+        images: ["/og-image.webp"],
     },
 };
 

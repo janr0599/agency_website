@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/og-image.png",
+                url: "/og-image.webp",
                 width: 1200,
                 height: 630,
                 alt: "About PraxisFlow",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "About Us | PraxisFlow",
         description: "Engineering the future of legal operations. We simplify complex workflows through intelligent automation.",
-        images: ["/og-image.png"],
+        images: ["/og-image.webp"],
     },
 }
 

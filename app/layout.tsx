@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         siteName: "PraxisFlow",
         images: [
             {
-                url: "/og-image.png",
+                url: "/og-image.webp",
                 width: 1200,
                 height: 630,
                 alt: "PraxisFlow",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "PraxisFlow | Private Automation Infrastructure for Modern Law Firms",
         description: "We simplify complex legal operations through intelligent, custom automation — freeing attorneys to focus on billable work.",
-        images: ["/og-image.png"],
+        images: ["/og-image.webp"],
         creator: "@praxisflow",
     },
     icons: {

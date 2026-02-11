@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/og-image.png",
+                url: "/og-image.webp",
                 width: 1200,
                 height: 630,
                 alt: "PraxisFlow Case Studies",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Case Studies | PraxisFlow",
         description: "See how we've helped boutique law firms save thousands of hours and increase revenue through custom automation.",
-        images: ["/og-image.png"],
+        images: ["/og-image.webp"],
     },
 };
 
