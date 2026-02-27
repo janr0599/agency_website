@@ -5,7 +5,14 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
     try {
-        const { name, email, firm, message } = await req.json();
+        const { name, email, firm, message, fax } = await req.json();
+
+        // GOLDEN RULE: if fax has a value, it's a bot.
+        if (fax) {
+            console.warn("Honeypot activado. Bot detectado.");
+            // we return a sucess response to throw the bot off, but email is not sent.
+            return NextResponse.json({ success: true, message: "Spam filtered" });
+        }
 
         if (!name || !email || !firm || !message) {
             return NextResponse.json(

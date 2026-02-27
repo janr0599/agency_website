@@ -11,7 +11,8 @@ export function ContactForm() {
         name: "",
         email: "",
         firm: "",
-        message: ""
+        message: "",
+        fax: ""
     });
     const [errors, setErrors] = useState<Record<string, string>>({});
     const [touched, setTouched] = useState<Record<string, boolean>>({});
@@ -86,7 +87,7 @@ export function ContactForm() {
             }
 
             setStatus("success");
-            setFormData({ name: "", email: "", firm: "", message: "" });
+            setFormData({ name: "", email: "", firm: "", message: "", fax: "" });
             setTouched({});
             setErrors({});
         } catch (error: any) {
@@ -201,6 +202,17 @@ export function ContactForm() {
                 {touched.message && errors.message && (
                     <p className="text-red-500 text-xs mt-1">{errors.message}</p>
                 )}
+            </div>
+
+            <div className="hidden" aria-hidden="true">
+                <input
+                    id="fax"
+                    type="text"
+                    tabIndex={-1}
+                    value={formData.fax}
+                    onChange={handleChange}
+                    autoComplete="off"
+                />
             </div>
 
             {status === "error" && (
