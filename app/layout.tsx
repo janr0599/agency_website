@@ -10,8 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.praxisflow.com"),
+    alternates: {
+        canonical: "/", // this generates <link rel="canonical" href="https://www.praxisflow.com" />
+    },
     title: {
-        default: "PraxisFlow | Secure Legal Automation & Private Infrastructure",
+        default: "Secure Legal Automation & Private Infrastructure | PraxisFlow",
         template: "%s | PraxisFlow",
     },
     description: "We simplify complex legal operations through intelligent, custom automation — freeing attorneys to focus on billable work.",

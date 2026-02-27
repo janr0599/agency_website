@@ -4,7 +4,7 @@ const JsonLd = () => {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        name: "PraxisFlow Automations",
+        name: "PraxisFlow",
         url: "https://www.praxisflow.com",
         logo: "https://www.praxisflow.com/favicon-32x32.png",
         description: "We simplify complex legal operations through intelligent, custom automation.",
