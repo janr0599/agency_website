@@ -8,16 +8,16 @@ import { FAQsHomepage } from "../components/sections/HomeFaqs";
 import CTA from "../components/sections/CTA";
 
 export default function Home() {
-    return (
-        <div className="flex flex-col w-full">
-            <Hero />
-            <Integrations />
-            <Services />
-            <Process />
-            <PathwaysToEngagement />
-            {/* <Testimonials /> */}
-            <FAQsHomepage />
-            <CTA />
-        </div>
-    );
+	return (
+		<div className="flex flex-col w-full">
+			<Hero />
+			<Integrations />
+			<Services />
+			<Process />
+			<PathwaysToEngagement />
+			{/* <Testimonials /> */}
+			<FAQsHomepage />
+			<CTA />
+		</div>
+	);
 }

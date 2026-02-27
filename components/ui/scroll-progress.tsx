@@ -1,34 +1,34 @@
-"use client"
+"use client";
 
-import { motion, MotionProps, useScroll } from "motion/react"
+import { motion, MotionProps, useScroll } from "motion/react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 interface ScrollProgressProps extends Omit<
-  React.HTMLAttributes<HTMLElement>,
-  keyof MotionProps
+	React.HTMLAttributes<HTMLElement>,
+	keyof MotionProps
 > {
-  ref?: React.Ref<HTMLDivElement>
+	ref?: React.Ref<HTMLDivElement>;
 }
 
 export function ScrollProgress({
-  className,
-  ref,
-  ...props
+	className,
+	ref,
+	...props
 }: ScrollProgressProps) {
-  const { scrollYProgress } = useScroll()
+	const { scrollYProgress } = useScroll();
 
-  return (
-    <motion.div
-      ref={ref}
-      className={cn(
-        "fixed inset-x-0 top-0 z-[100] h-0.5 origin-left bg-accent",
-        className
-      )}
-      style={{
-        scaleX: scrollYProgress,
-      }}
-      {...props}
-    />
-  )
+	return (
+		<motion.div
+			ref={ref}
+			className={cn(
+				"fixed inset-x-0 top-0 z-[100] h-0.5 origin-left bg-accent",
+				className,
+			)}
+			style={{
+				scaleX: scrollYProgress,
+			}}
+			{...props}
+		/>
+	);
 }

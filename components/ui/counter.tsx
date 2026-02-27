@@ -5,37 +5,42 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export default function Counter({
-    value,
-    direction = "up",
-    className,
+	value,
+	direction = "up",
+	className,
 }: {
-    value: number;
-    direction?: "up" | "down";
-    className?: string;
+	value: number;
+	direction?: "up" | "down";
+	className?: string;
 }) {
-    const ref = useRef<HTMLSpanElement>(null);
-    const motionValue = useMotionValue(direction === "down" ? value : 0);
-    const springValue = useSpring(motionValue, {
-        damping: 60,
-        stiffness: 100,
-    });
-    const isInView = useInView(ref, { once: true });
+	const ref = useRef<HTMLSpanElement>(null);
+	const motionValue = useMotionValue(direction === "down" ? value : 0);
+	const springValue = useSpring(motionValue, {
+		damping: 60,
+		stiffness: 100,
+	});
+	const isInView = useInView(ref, { once: true });
 
-    useEffect(() => {
-        if (isInView) {
-            motionValue.set(direction === "down" ? 0 : value);
-        }
-    }, [motionValue, isInView, direction, value]);
+	useEffect(() => {
+		if (isInView) {
+			motionValue.set(direction === "down" ? 0 : value);
+		}
+	}, [motionValue, isInView, direction, value]);
 
-    useEffect(() => {
-        springValue.on("change", (latest) => {
-            if (ref.current) {
-                ref.current.textContent = Intl.NumberFormat("en-US").format(
-                    Math.floor(latest)
-                );
-            }
-        });
-    }, [springValue]);
+	useEffect(() => {
+		springValue.on("change", (latest) => {
+			if (ref.current) {
+				ref.current.textContent = Intl.NumberFormat("en-US").format(
+					Math.floor(latest),
+				);
+			}
+		});
+	}, [springValue]);
 
-    return <span className={cn("inline-block tabular-nums", className)} ref={ref} />;
+	return (
+		<span
+			className={cn("inline-block tabular-nums", className)}
+			ref={ref}
+		/>
+	);
 }
