@@ -48,9 +48,9 @@ export default function Footer() {
 						</div>
 
 						<div>
-							<h4 className="font-medium text-foreground mb-4 text-sm">
+							<h3 className="font-medium text-foreground mb-4 text-sm">
 								Product
-							</h4>
+							</h3>
 							<ul className="space-y-3 text-sm text-muted-foreground">
 								<li>
 									<a
@@ -80,9 +80,9 @@ export default function Footer() {
 						</div>
 
 						<div>
-							<h4 className="font-medium text-foreground mb-4 text-sm">
+							<h3 className="font-medium text-foreground mb-4 text-sm">
 								Company
-							</h4>
+							</h3>
 							<ul className="space-y-3 text-sm text-muted-foreground">
 								<li>
 									<a
@@ -112,9 +112,9 @@ export default function Footer() {
 						</div>
 
 						<div>
-							<h4 className="font-medium text-foreground mb-4 text-sm">
+							<h3 className="font-medium text-foreground mb-4 text-sm">
 								Legal
-							</h4>
+							</h3>
 							<ul className="space-y-3 text-sm text-muted-foreground">
 								<li>
 									<a

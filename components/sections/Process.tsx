@@ -64,9 +64,9 @@ export default function Process() {
 								<div className="w-12 h-12 bg-teal-500/10 rounded-xl flex items-center justify-center mb-6 text-teal-400">
 									<Zap className="w-6 h-6" />
 								</div>
-								<h4 className="text-xl font-semibold mb-3 text-white">
+								<h3 className="text-xl font-semibold mb-3 text-white">
 									Discovery
-								</h4>
+								</h3>
 								<p className="text-sm text-slate-400 leading-relaxed relative z-10">
 									We analyze your current workflows, identify
 									pain points, and map out opportunities for
@@ -108,9 +108,9 @@ export default function Process() {
 								<div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 text-blue-400">
 									<GitMerge className="w-6 h-6" />
 								</div>
-								<h4 className="text-xl font-semibold mb-3 text-white">
+								<h3 className="text-xl font-semibold mb-3 text-white">
 									Development
-								</h4>
+								</h3>
 								<p className="text-sm text-slate-400 leading-relaxed relative z-10">
 									Our team builds custom automation
 									infrastructure that seamlessly integrates
@@ -152,9 +152,9 @@ export default function Process() {
 								<div className="w-12 h-12 bg-violet-500/10 rounded-xl flex items-center justify-center mb-6 text-violet-400">
 									<Sparkles className="w-6 h-6" />
 								</div>
-								<h4 className="text-xl font-semibold mb-3 text-white">
+								<h3 className="text-xl font-semibold mb-3 text-white">
 									Delivery
-								</h4>
+								</h3>
 								<p className="text-sm text-slate-400 leading-relaxed relative z-10">
 									We deploy your custom workflows, train your
 									team, and ensure everything runs smoothly
@@ -188,9 +188,9 @@ export default function Process() {
 								<div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 text-emerald-400">
 									<CheckCircle2 className="w-6 h-6" />
 								</div>
-								<h4 className="text-xl font-semibold mb-3 text-white">
+								<h3 className="text-xl font-semibold mb-3 text-white">
 									Support & Scale
-								</h4>
+								</h3>
 								<p className="text-sm text-slate-400 leading-relaxed relative z-10">
 									We provide continuous monitoring,
 									maintenance, and optimization as your firm
