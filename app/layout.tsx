@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
 import JsonLd from "../components/seo/JsonLd";
+import { Analytics } from "@vercel/analytics/next";
 // import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -106,6 +107,7 @@ export default function RootLayout({
 					{children}
 				</main>
 				<Footer />
+				<Analytics />
 			</body>
 		</html>
 	);
