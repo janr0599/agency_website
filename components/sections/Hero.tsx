@@ -20,7 +20,7 @@ export default function Hero() {
 				<FadeIn>
 					<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-medium mb-8 animate-fade-in-up">
 						<span className="flex h-2 w-2 rounded-full bg-accent"></span>
-						New: AI-Powered Contract Review
+						Revenue-First Workflows
 					</div>
 
 					<h1 className="text-5xl md:text-7xl font-medium text-foreground tracking-tighter mb-6 max-w-4xl mx-auto leading-[1.1]">
