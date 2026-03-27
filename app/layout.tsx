@@ -5,6 +5,7 @@ import Navbar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
 import JsonLd from "../components/seo/JsonLd";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -108,6 +109,7 @@ export default function RootLayout({
 				</main>
 				<Footer />
 				<Analytics />
+                <SpeedInsights />
 			</body>
 		</html>
 	);
