@@ -187,7 +187,9 @@ export function Pricing() {
 					If you have an idea to improve your workflow, we may be able
 					to do it.{" "}
 					<Link
-						href="/contact"
+                        href="https://calendar.app.google/AtTiu5d3kd2EwumQ8"
+                        target="_blank"
+                        rel="noopener noreferrer"
 						className="text-accent hover:underline underline-offset-4"
 					>
 						Schedule a free consultation
