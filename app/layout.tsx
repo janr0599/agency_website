@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
@@ -109,7 +110,24 @@ export default function RootLayout({
 				</main>
 				<Footer />
 				<Analytics />
-                <SpeedInsights />
+				<SpeedInsights />
+				<Script strategy="afterInteractive">
+					{`
+						(function(d,t) {
+							var BASE_URL="https://chat.praxisflow.com";
+							var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+							g.src=BASE_URL+"/packs/js/sdk.js";
+							g.async = true;
+							s.parentNode.insertBefore(g,s);
+							g.onload=function(){
+								window.chatwootSDK.run({
+									websiteToken: 'm6VPYKPLTetKeZBwYqk4A6Bj',
+									baseUrl: BASE_URL
+								})
+							}
+						})(document,"script");
+					`}
+				</Script>
 			</body>
 		</html>
 	);

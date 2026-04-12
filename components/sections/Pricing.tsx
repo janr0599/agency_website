@@ -87,7 +87,7 @@ export function Pricing() {
 					</div>
 
 					<h3 className="font-medium text-foreground text-xl mb-2">
-						Phase 2: Ongoing Partnership
+						Phase 2: Ongoing Partnership (optional)
 					</h3>
 					<p className="text-accent font-medium text-sm mb-6 uppercase tracking-wider">
 						Predictable Monthly Fee

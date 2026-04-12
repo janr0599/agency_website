@@ -18,7 +18,7 @@ export function FAQs() {
 		},
 		{
 			question: "Is infrastructure management optional?",
-			answer: "No. Your n8n instance runs on a dedicated server that operates 24/7. This requires continuous security monitoring, patch management, automated backup verification, and performance alerting. We cannot offer 'infrastructure only' pricing as the management overhead exists regardless of usage intensity.",
+			answer: "It depends on your setup. If you already have a cloud account where we can build your automation workflows, infrastructure management can be optional, you can handle it yourself or opt for our support services for troubleshooting and minor updates. However, if we set up the dedicated server for you, management is required and included in our service. This option provides enterprise-grade security, full compliance with legal standards, 24/7 monitoring, automated backups, and performance optimization—making it a superior choice for firms prioritizing data protection and seamless operations.",
 		},
 		{
 			question: "Am I locked in? What happens if I want to cancel?",
@@ -44,7 +44,7 @@ export function FAQs() {
 		{
 			question:
 				"Why do you use n8n instead of platforms like Zapier or Make?",
-			answer: "We choose n8n for its superior flexibility, data privacy, and cost-efficiency. Unlike Zapier or Make, n8n allows for self-hosting—ensuring sensitive client data stays within your controlled environment. It also handles complex logic more effectively and doesn't charge per-task, meaning your costs don't skyrocket as your firm's automation volume grows.",
+			answer: "We choose n8n for its flexibility, data ownership, and predictable cost model. With self-hosted n8n, your automation runs on private infrastructure under your control rather than in a shared workflow SaaS platform. That means we can support more complex logic without per-task usage charges, so your automation costs remain predictable as your firm grows.",
 		},
 		{
 			question:

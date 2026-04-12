@@ -13,20 +13,24 @@ export function FAQsHomepage() {
 			answer: "Implementation timelines vary based on complexity, but most projects take 4-12 weeks from discovery to full deployment. Simple integrations might take 2-3 weeks, while comprehensive firm-wide automation could take 3 months. We provide a detailed project timeline during discovery and keep you updated throughout each phase.",
 		},
 		{
+			question: "How do you build automation workflows?",
+			answer: "We design and deploy your workflows on self-hosted n8n, using dedicated private infrastructure that keeps your automation environment under your control. If you already have an existing automation cloud account, we can also build your workflows on top of it so you don't have to commit to a new platform just to get started. This lets us support firm-specific logic, custom integrations, and predictable costs while still keeping your environment secure and manageable.",
+		},
+		{
 			question: "Who owns the data and workflows?",
 			answer: "You do. 100%. Unlike closed platforms, we build on your own private infrastructure. You own the workflows, the data, and the n8n instance. We simply manage and maintain it for you.",
 		},
 		{
 			question: "Do I need to pay for n8n?",
-			answer: "n8n is free and open-source software. While n8n offers a paid cloud version, we deploy the self-hosted edition on your own private infrastructure. This ensures you have no limits on workflow complexity, complete data isolation, and full ownership—qualities that often cost significantly more or aren't possible with standard cloud plans. Your fee covers this dedicated infrastructure and our expert management, not a software license.",
+			answer: "n8n is free and open-source software. While n8n offers a paid cloud version, we deploy the self-hosted edition on your own private infrastructure. This ensures you have no limits on workflow complexity, complete data isolation, and full ownership. Qualities that often cost significantly more or aren't possible with standard cloud plans. Your fee covers this dedicated infrastructure and our expert management, not a software license.",
 		},
 		{
 			question: "Do we need to switch from our current legal software?",
-			answer: "No. We integrate with your existing tools—Clio, MyCase, LawLion, and 1,000+ other applications. Our workflows layer on top of your current infrastructure, so there's minimal disruption. In fact, we often reduce friction by automating the manual data transfers between your existing systems.",
+			answer: "No. We integrate with your existing tools such as Clio, MyCase, LawLion, and 1,000+ other applications. Our workflows layer on top of your current infrastructure, so there's minimal disruption. In fact, we often reduce friction by automating the manual data transfers between your existing systems.",
 		},
 		{
 			question: "How do you handle sensitive client data and security?",
-			answer: "Security is foundational. We build your automations using n8n, which allows us to provide a service unrestricted by the heavy over-usage charges typically imposed by platforms like Zapier or Make. Instead of your data sitting on a third-party cloud, your n8n instance runs within a dedicated, private environment. This ensures your sensitive business information stays within your control. Never shared, never co-mingled, and with no data passing through our servers. We implement end-to-end encryption for sensitive data, maintain detailed audit logs for compliance, and follow legal industry standards. All API credentials are stored securely in encrypted vaults, and we conduct quarterly security reviews.",
+			answer: "Security is foundational. We build your automations on self-hosted n8n, so your workflows run on dedicated private infrastructure instead of a shared third-party SaaS environment like Zapier or Make. That keeps your data under your control, avoids per-task usage pricing, and makes your automation environment easier to govern. We also implement end-to-end encryption for sensitive data, maintain detailed audit logs for compliance, and follow legal industry standards. All API credentials are stored securely in encrypted vaults, and we conduct quarterly security reviews.",
 		},
 	];
 
