@@ -62,6 +62,15 @@ export default function ContactPage() {
 							contact@praxisflow.com
 						</a>
 					</p>
+					<p className="text-muted-foreground text-sm mt-2">
+						Or call us at{" "}
+						<a
+							href="tel:+16173156878"
+							className="text-primary hover:underline"
+						>
+							+1 (617) 315-6878
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>

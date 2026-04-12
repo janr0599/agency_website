@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Phone } from "lucide-react";
 import Image from "next/image";
 import { FadeIn } from "./fade-in";
 
@@ -28,21 +28,35 @@ export default function Footer() {
 							<div className="flex gap-4 text-muted-foreground">
 								<a
 									href="https://www.instagram.com/praxisflowstrategies/"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-accent transition-colors"
 								>
 									<Instagram className="w-5 h-5" />
 								</a>
 								<a
 									href="https://www.facebook.com/profile.php?id=61572337974311"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-accent transition-colors"
 								>
 									<Facebook className="w-5 h-5" />
 								</a>
 								<a
-									href="#"
+									href="https://www.linkedin.com/company/praxisflowstrategies"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-accent transition-colors"
 								>
 									<Linkedin className="w-5 h-5" />
+								</a>
+
+								<a
+									href="https://wa.me/message/6NX4JMQ4A7L7I1"
+									target="_blank"
+									className="flex items-center gap-2 hover:text-accent transition-colors text-sm"
+								>
+									+1 (617) 315-6878
 								</a>
 							</div>
 						</div>
