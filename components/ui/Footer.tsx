@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Github } from "lucide-react";
+import { Instagram, Facebook, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { FadeIn } from "./fade-in";
 
@@ -27,22 +27,22 @@ export default function Footer() {
 							</p>
 							<div className="flex gap-4 text-muted-foreground">
 								<a
-									href="#"
+									href="https://www.instagram.com/praxisflowstrategies/"
 									className="hover:text-accent transition-colors"
 								>
-									<Twitter className="w-5 h-5" />
+									<Instagram className="w-5 h-5" />
+								</a>
+								<a
+									href="https://www.facebook.com/profile.php?id=61572337974311"
+									className="hover:text-accent transition-colors"
+								>
+									<Facebook className="w-5 h-5" />
 								</a>
 								<a
 									href="#"
 									className="hover:text-accent transition-colors"
 								>
 									<Linkedin className="w-5 h-5" />
-								</a>
-								<a
-									href="#"
-									className="hover:text-accent transition-colors"
-								>
-									<Github className="w-5 h-5" />
 								</a>
 							</div>
 						</div>
