@@ -14,7 +14,7 @@ export function FAQsHomepage() {
 		},
 		{
 			question: "How do you build automation workflows?",
-			answer: "We design and deploy your workflows on self-hosted n8n, using dedicated private infrastructure that keeps your automation environment under your control. If you already have an existing automation cloud account, we can also build your workflows on top of it so you don't have to commit to a new platform just to get started. This lets us support firm-specific logic, custom integrations, and predictable costs while still keeping your environment secure and manageable.",
+			answer: "We design and deploy your workflows on self-hosted n8n, using dedicated private infrastructure that keeps your automation environment under your control. If you already have an existing automation cloud account, we can also build your workflows on top of it so you don't have to commit to a new platform just to get started. This lets us support firm-specific logic, custom integrations, and keep costs predictable.",
 		},
 		{
 			question: "Who owns the data and workflows?",

@@ -1,33 +1,16 @@
 "use client";
 
-import { Key, Shield, Lock, Database, GitBranch, Activity } from "lucide-react";
+import { Shield, GitBranch, Activity } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Security() {
 	const securityFeatures = [
 		{
-			icon: Key,
-			title: "Strict Access Control",
-			description:
-				"Your infrastructure is locked down. We use bank-grade authentication to ensure only authorized personnel can access your systems.",
-		},
-		{
 			icon: Shield,
-			title: "Private Cloud Environment",
+			title: "Secure Infrastructure & Data Protection",
 			description:
-				"Your workflows run in a private, isolated space, shielded from public internet threats and completely separate from other clients.",
-		},
-		{
-			icon: Lock,
-			title: "End-to-End Encryption",
-			description:
-				"Your client data and API keys are encrypted at rest and in transit. We ensure your firm's secrets remain secret.",
-		},
-		{
-			icon: Database,
-			title: "Unbreakable Backups",
-			description:
-				"We perform automated, encrypted backups that are locked against deletion. Even in a worst-case scenario, your data is safe and recoverable.",
+				"Your automation workflows are protected secure access controls, private environments, encryption, and reliable backups to keep everything safe and accessible.",
 		},
 		{
 			icon: GitBranch,
@@ -54,16 +37,16 @@ export default function Security() {
 					className="text-center mb-16"
 				>
 					<h2 className="text-4xl md:text-5xl font-medium text-white tracking-tight mb-4">
-						Enterprise-Grade Security
+						Your Security is Our Priority
 					</h2>
 					<p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-						Your firm's data protection is our top priority. We use
-						industry-leading security measures to keep your
-						information safe, private, and available.
+						We prioritize keeping your information safe, private,
+						and always available with comprehensive security
+						measures.
 					</p>
 				</motion.div>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div className="grid md:grid-cols-3 gap-6">
 					{securityFeatures.map((feature, index) => {
 						const Icon = feature.icon;
 						return (
@@ -97,6 +80,21 @@ export default function Security() {
 						);
 					})}
 				</div>
+
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
+					transition={{ duration: 0.5, delay: 0.3 }}
+					className="text-center mt-12"
+				>
+					<Link
+						href="/security"
+						className="inline-flex items-center px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-lg transition-colors duration-200"
+					>
+						Learn More About Our Security
+					</Link>
+				</motion.div>
 			</div>
 		</section>
 	);
